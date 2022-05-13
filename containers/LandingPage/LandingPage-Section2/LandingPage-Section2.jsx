@@ -1,13 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row, Card } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import styles from "./LandingPage-Section2.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowLeftLong,
-  faArrowRightLong,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function LandingPageSection1() {
   const responsive = {
@@ -35,17 +31,17 @@ export default function LandingPageSection1() {
       <div className={styles["carousel-button-group"]}>
         {" "}
         <button
-          className={currentSlide === 0 ? styles["disable"] : ""}
+          disabled={currentSlide === 0 ? "disabled" : ""}
           onClick={() => previous()}
           id={styles["LandingPage-Section2-button"]}
         >
-          <FontAwesomeIcon icon={faArrowLeftLong} />
+          <FontAwesomeIcon icon={faArrowLeft} />
         </button>
         <button
           onClick={() => next()}
           id={styles["LandingPage-Section2-button"]}
         >
-          <FontAwesomeIcon icon={faArrowRightLong} />
+          <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
     );
@@ -62,146 +58,130 @@ export default function LandingPageSection1() {
             </div>
           </Col>
           <Col lg={8} className={styles["LandingPage-Section2-right"]}>
-            <div
-              className={styles["LandingPage-Section2-Right-content-container"]}
+            <Carousel
+              responsive={responsive}
+              additionalTransfrom={0}
+              arrows={false}
+              autoPlaySpeed={3000}
+              centerMode={false}
+              className=""
+              containerClass="container-padding-bottom"
+              customButtonGroup={<ButtonGroup />}
+              dotListClass=""
+              draggable
+              focusOnSelect={false}
+              infinite={false}
+              itemClass=""
+              keyBoardControl
+              minimumTouchDrag={80}
+              renderButtonGroupOutside
+              renderDotsOutside={false}
             >
-              <Carousel
-                responsive={responsive}
-                additionalTransfrom={0}
-                arrows={false}
-                autoPlaySpeed={3000}
-                centerMode={false}
-                className=""
-                containerClass="container-padding-bottom"
-                customButtonGroup={<ButtonGroup />}
-                dotListClass=""
-                draggable
-                focusOnSelect={false}
-                infinite={false}
-                itemClass=""
-                keyBoardControl
-                minimumTouchDrag={80}
-                renderButtonGroupOutside
-                renderDotsOutside={false}
-              >
-                <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                  <Card.Img
-                    variant="top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                    height={250}
-                  />
-                  <Card.Body
-                    className={styles["LandingPage-Section2-Right-Card-Body"]}
+              <Card className={styles["LandingPage-Section2-Right-Card"]}>
+                <Card.Img
+                  variant="top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
+                  height={250}
+                />
+                <Card.Body
+                  className={styles["LandingPage-Section2-Right-Card-Body"]}
+                >
+                  <Card.Title
+                    className={styles["LandingPage-Section2-Right-Card-Title"]}
                   >
-                    <Card.Title
-                      className={
-                        styles["LandingPage-Section2-Right-Card-Title"]
-                      }
-                    >
-                      #BIGSIGHTUPDATE
-                    </Card.Title>
-                    <Card.Text
-                      className={styles["LandingPage-Section2-Right-Card-Text"]}
-                    >
-                      Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
-                      digital logistik dengan mendigitalisasi proses supply
-                      chain secara end-to-end melalui pemanfaatan teknologi
-                      terkini.
-                    </Card.Text>
-                  </Card.Body>
-                  <Card.Footer
-                    className={styles["LandingPage-Section2-Right-Card-Footer"]}
-                  />
-                </Card>
-                <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                  <Card.Img
-                    variant="top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                    height={250}
-                  />
-                  <Card.Body
-                    className={styles["LandingPage-Section2-Right-Card-Body"]}
+                    #BIGSIGHTUPDATE
+                  </Card.Title>
+                  <Card.Text
+                    className={styles["LandingPage-Section2-Right-Card-Text"]}
                   >
-                    <Card.Title
-                      className={
-                        styles["LandingPage-Section2-Right-Card-Title"]
-                      }
-                    >
-                      #BIGSIGHTUPDATE
-                    </Card.Title>
-                    <Card.Text
-                      className={styles["LandingPage-Section2-Right-Card-Text"]}
-                    >
-                      Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
-                      digital logistik dengan mendigitalisasi proses supply
-                      chain secara end-to-end melalui pemanfaatan teknologi
-                      terkini.
-                    </Card.Text>
-                  </Card.Body>
-                  <Card.Footer
-                    className={styles["LandingPage-Section2-Right-Card-Footer"]}
-                  />
-                </Card>
-                <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                  <Card.Img
-                    variant="top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                    height={250}
-                  />
-                  <Card.Body
-                    className={styles["LandingPage-Section2-Right-Card-Body"]}
+                    Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
+                    digital logistik dengan mendigitalisasi proses supply chain
+                    secara end-to-end melalui pemanfaatan teknologi terkini.
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer
+                  className={styles["LandingPage-Section2-Right-Card-Footer"]}
+                />
+              </Card>
+              <Card className={styles["LandingPage-Section2-Right-Card"]}>
+                <Card.Img
+                  variant="top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
+                  height={250}
+                />
+                <Card.Body
+                  className={styles["LandingPage-Section2-Right-Card-Body"]}
+                >
+                  <Card.Title
+                    className={styles["LandingPage-Section2-Right-Card-Title"]}
                   >
-                    <Card.Title
-                      className={
-                        styles["LandingPage-Section2-Right-Card-Title"]
-                      }
-                    >
-                      #BIGSIGHTUPDATE
-                    </Card.Title>
-                    <Card.Text
-                      className={styles["LandingPage-Section2-Right-Card-Text"]}
-                    >
-                      Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
-                      digital logistik dengan mendigitalisasi proses supply
-                      chain secara end-to-end melalui pemanfaatan teknologi
-                      terkini.
-                    </Card.Text>
-                  </Card.Body>
-                  <Card.Footer
-                    className={styles["LandingPage-Section2-Right-Card-Footer"]}
-                  />
-                </Card>
-                <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                  <Card.Img
-                    variant="top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                    height={250}
-                  />
-                  <Card.Body
-                    className={styles["LandingPage-Section2-Right-Card-Body"]}
+                    #BIGSIGHTUPDATE
+                  </Card.Title>
+                  <Card.Text
+                    className={styles["LandingPage-Section2-Right-Card-Text"]}
                   >
-                    <Card.Title
-                      className={
-                        styles["LandingPage-Section2-Right-Card-Title"]
-                      }
-                    >
-                      #BIGSIGHTUPDATE
-                    </Card.Title>
-                    <Card.Text
-                      className={styles["LandingPage-Section2-Right-Card-Text"]}
-                    >
-                      Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
-                      digital logistik dengan mendigitalisasi proses supply
-                      chain secara end-to-end melalui pemanfaatan teknologi
-                      terkini.
-                    </Card.Text>
-                  </Card.Body>
-                  <Card.Footer
-                    className={styles["LandingPage-Section2-Right-Card-Footer"]}
-                  />
-                </Card>
-              </Carousel>
-            </div>
+                    Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
+                    digital logistik dengan mendigitalisasi proses supply chain
+                    secara end-to-end melalui pemanfaatan teknologi terkini.
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer
+                  className={styles["LandingPage-Section2-Right-Card-Footer"]}
+                />
+              </Card>
+              <Card className={styles["LandingPage-Section2-Right-Card"]}>
+                <Card.Img
+                  variant="top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
+                  height={250}
+                />
+                <Card.Body
+                  className={styles["LandingPage-Section2-Right-Card-Body"]}
+                >
+                  <Card.Title
+                    className={styles["LandingPage-Section2-Right-Card-Title"]}
+                  >
+                    #BIGSIGHTUPDATE
+                  </Card.Title>
+                  <Card.Text
+                    className={styles["LandingPage-Section2-Right-Card-Text"]}
+                  >
+                    Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
+                    digital logistik dengan mendigitalisasi proses supply chain
+                    secara end-to-end melalui pemanfaatan teknologi terkini.
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer
+                  className={styles["LandingPage-Section2-Right-Card-Footer"]}
+                />
+              </Card>
+              <Card className={styles["LandingPage-Section2-Right-Card"]}>
+                <Card.Img
+                  variant="top"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
+                  height={250}
+                />
+                <Card.Body
+                  className={styles["LandingPage-Section2-Right-Card-Body"]}
+                >
+                  <Card.Title
+                    className={styles["LandingPage-Section2-Right-Card-Title"]}
+                  >
+                    #BIGSIGHTUPDATE
+                  </Card.Title>
+                  <Card.Text
+                    className={styles["LandingPage-Section2-Right-Card-Text"]}
+                  >
+                    Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
+                    digital logistik dengan mendigitalisasi proses supply chain
+                    secara end-to-end melalui pemanfaatan teknologi terkini.
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer
+                  className={styles["LandingPage-Section2-Right-Card-Footer"]}
+                />
+              </Card>
+            </Carousel>
           </Col>
         </Row>
       </Container>

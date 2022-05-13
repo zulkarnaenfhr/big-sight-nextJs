@@ -8,7 +8,7 @@
 
 .LandingPage-Section2-Left {
     height: 100%;
-    border: 1px solid rgb(0, 208, 255);
+    /* border: 1px solid rgb(0, 208, 255); */
 }
 
 .LandingPage-Section2-Left-content-container h2 {
@@ -17,15 +17,15 @@
 
 .LandingPage-Section2-right {
     height: 100%;
-    border: 1px solid rgb(2, 123, 151);
+    /* border: 1px solid rgb(2, 123, 151); */
 }
 
 .LandingPage-Section2-Right-Card {
-    width: 400px;
-    float: right;
+    width: 440px;
     background-color: rgba(242, 244, 248, 1);
     border: unset;
     border-radius: unset;
+    float: right;
 }
 
 .LandingPage-Section2-Right-Card-Body {
@@ -33,7 +33,8 @@
 }
 
 .LandingPage-Section2-Right-Card-Title {
-    font: bold 17px;
+    font-weight: 700;
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
@@ -52,11 +53,8 @@
 /* corausel  */
 
 .carousel-button-group {
+    margin-top: 35px;
     float: right;
-}
-
-button.disable {
-    display: none;
 }
 
 #LandingPage-Section2-button {
