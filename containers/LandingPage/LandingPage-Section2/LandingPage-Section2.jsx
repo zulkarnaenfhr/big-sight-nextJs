@@ -3,6 +3,12 @@ import { Col, Container, Row, Card } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "./LandingPage-Section2.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowLeftLong,
+  faArrowRightLong,
+} from "@fortawesome/free-solid-svg-icons";
+
 export default function LandingPageSection1() {
   const responsive = {
     desktop: {
@@ -33,13 +39,13 @@ export default function LandingPageSection1() {
           onClick={() => previous()}
           id={styles["LandingPage-Section2-button"]}
         >
-          Left
+          <FontAwesomeIcon icon={faArrowLeftLong} />
         </button>
         <button
           onClick={() => next()}
           id={styles["LandingPage-Section2-button"]}
         >
-          Right
+          <FontAwesomeIcon icon={faArrowRightLong} />
         </button>
       </div>
     );
