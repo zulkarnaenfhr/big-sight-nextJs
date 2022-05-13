@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import LandingPageSection1 from "../containers/LandingPage/LandingPage-Section1/LandingPage-Section1";
+import LandingPageSection2 from "../containers/LandingPage/LandingPage-Section2/LandingPage-Section2";
 import LandingPageSection3 from "../containers/LandingPage/LandingPage-Section3/LandingPage-Section3";
 import LandingPageSection4 from "../containers/LandingPage/LandingPage-Section4/LandingPage-Section4";
 import LandingPageSection5 from "../containers/LandingPage/LandingPage-Section5/LandingPage-Section5";
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
             </div>
             <div className={styles["LandingPage-Content-Container"]}>
                 <LandingPageSection1 />
+                <LandingPageSection2 />
                 <LandingPageSection3 />
                 <LandingPageSection4 />
                 <LandingPageSection5 />
