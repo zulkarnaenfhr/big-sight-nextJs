@@ -1,0 +1,49 @@
+#LandingPage-Section5 {
+    background-color: #f2f4f8;
+    min-height: 1097px;
+    width: 100vw;
+}
+
+.LandingPage-Section5-Title {
+    font-family: poppins-700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #484848;
+    padding-top: 144px;
+}
+
+.LandingPage-Section5-AllCard-Container {
+    padding-top: 100px;
+    padding-bottom: 146px;
+}
+
+.LandingPage-Section5-Card-Container {
+    margin-top: 40px;
+}
+
+.LandingPage-Section5-ColumnContainer {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .LandingPage-Section5-Title1 {
+        font-size: 18px;
+    }
+    .LandingPage-Section5-Title2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .LandingPage-Section5-Title1 {
+        font-size: 16px;
+    }
+    .LandingPage-Section5-Title2 {
+        font-size: 30px;
+    }
+}
