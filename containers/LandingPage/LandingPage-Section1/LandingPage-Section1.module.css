@@ -1,0 +1,42 @@
+#LandingPage-Section1 {
+    width: 100vw;
+    min-height: 629px;
+    background-color: #f2f4f8;
+    position: relative;
+}
+
+.LandingPage-Section1-Left {
+    min-height: 629px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    z-index: 1;
+}
+
+.LandingPage-Section1-Left-Content-Container {
+    margin-left: 50px;
+}
+
+.LandingPage-Section1-Left-Desc {
+    width: 100%;
+    max-width: 290px;
+    font-family: poppins-500;
+    font-size: 22px;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.LandingPage-Section1-Left-Title {
+    width: 100%;
+    max-width: 510px;
+    font-family: poppins-700;
+    font-size: 48px;
+    line-height: 134%;
+    margin-top: 25px;
+    text-transform: capitalize;
+}
+
+.LandingPage-Section1-Button-Container{
+    
+}

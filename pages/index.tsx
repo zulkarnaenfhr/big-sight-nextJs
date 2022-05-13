@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import { Container } from "react-bootstrap";
+import LandingPageSection1 from "../containers/LandingPage/LandingPage-Section1/LandingPage-Section1";
 import BigSightNavbar from "../containers/Navbar/BigSightNavbar";
-import styles from "../styles/Home.module.css";
+import styles from "./LandingPage.module.css";
 
 const Home: NextPage = () => {
     return (
@@ -14,11 +13,12 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <BigSightNavbar />
-
-            <Container fluid>
-                <h1 className="title">masuasdk</h1>
-            </Container>
+            <div className={styles["LandingPage-Navbar-Container"]}>
+                <BigSightNavbar />
+            </div>
+            <div className={styles["LandingPage-Content-Container"]}>
+                <LandingPageSection1 />
+            </div>
         </div>
     );
 };

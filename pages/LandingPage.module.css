@@ -1,0 +1,10 @@
+.LandingPage-Navbar-Container {
+    position: fixed;
+    top: 0;
+    height: auto;
+    z-index: 2;
+}
+
+.LandingPage-Content-Container {
+    margin-top: 94px;
+}

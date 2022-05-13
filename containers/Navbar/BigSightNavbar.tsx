@@ -1,6 +1,5 @@
 import styles from "./BigSightNavbar.module.css";
 import { Navbar, Container, Nav, NavDropdown, Row, Col } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
 import Image from "next/image";
 import LogoBigSight from "../../src/Big-Sight/LogoBigSight.png";
