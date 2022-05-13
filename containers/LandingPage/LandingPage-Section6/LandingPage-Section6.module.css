@@ -1,0 +1,90 @@
+#LandingPage-Section6 {
+    min-height: 601px;
+    width: 100vw;
+    background-color: #002145;
+}
+
+.LandingPage-Section6-Title {
+    font-family: poppins-700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 135px;
+}
+
+.LandingPage-Section6-Content-Parent-Container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    margin-top: 88px;
+}
+
+.LandingPage-Section6-Content-Container {
+    width: 100%;
+    max-width: 931px;
+    min-height: 214px;
+    border: 1px solid red;
+}
+
+.LandingPage-Section6-Cloudera-Logo-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+}
+
+.LandingPage-Section6-Cloudera-Logo-Wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 296px;
+    max-height: 36px;
+}
+
+.LandingPage-Section6-CioOutlook-Logo-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.LandingPage-Section6-CioOutlook-Logo-Wrapper {
+    width: 241px;
+    height: 73px;
+}
+
+.LandingPage-Section6-Column-Content-Title {
+    font-family: poppins-700;
+    font-size: 25px;
+    line-height: 100%;
+    /* identical to box height, or 25px */
+    text-transform: capitalize;
+    color: #ffffff;
+    text-align: center;
+}
+
+.LandingPage-Section6-Column-Content-Title-Cloudera {
+    margin-top: 69px;
+}
+
+.LandingPage-Section6-Column-Content-Title-CioOutlook {
+    margin-top: 60px;
+}
+
+.LandingPage-Section6-Column-Content-Desc {
+    font-family: poppins-400;
+    font-size: 17px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .LandingPage-Section6-Content-Parent-Container {
+        padding-bottom: 80px;
+    }
+    .LandingPage-Section6-PaddingTop-Column2{
+        padding-top: 88px;
+    }
+}
