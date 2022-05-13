@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./LandingPage-Section1.module.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { LandingPageSection1Button } from "../../../components/Button/LandingPage/ButtonLandingPage.styled";
 
 export default function LandingPageSection1() {

@@ -14,11 +14,17 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-    width: 0; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
 }
+
+
 /* Optional: show position indicator in red */
+
 ::-webkit-scrollbar-thumb {
     background: #ff0000;
 }
@@ -66,4 +72,15 @@ html {
 @font-face {
     font-family: nunitoSans-900;
     src: url("../src/fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf");
+}
+
+.Navbar-Container {
+    position: fixed;
+    top: 0;
+    height: auto;
+    z-index: 2;
+}
+
+.Content-Container {
+    margin-top: 94px;
 }
