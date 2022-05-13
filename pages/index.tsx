@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPageSection1 from "../containers/LandingPage/LandingPage-Section1/LandingPage-Section1";
 import LandingPageSection2 from "../containers/LandingPage/LandingPage-Section2/LandingPage-Section2";
 import LandingPageSection3 from "../containers/LandingPage/LandingPage-Section3/LandingPage-Section3";
@@ -23,10 +24,10 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className={styles["LandingPage-Navbar-Container"]}>
+            <div className={"Navbar-Container"}>
                 <BigSightNavbar />
             </div>
-            <div className={styles["LandingPage-Content-Container"]}>
+            <div className={"Content-Container"}>
                 <LandingPageSection1 />
                 <LandingPageSection2 />
                 <LandingPageSection3 />
