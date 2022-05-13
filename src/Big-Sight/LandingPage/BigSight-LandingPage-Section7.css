@@ -1,0 +1,69 @@
+#BigSightLandingPage-Section7 {
+    width: 100vw;
+    min-height: 553px;
+    background: white;
+    position: relative;
+}
+
+.BigSightLandingPage-Section7-Title {
+    font-family: poppins-700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323232;
+    padding-top: 73px;
+}
+
+.BigSightLandingPage-Section7-Telkom-Indonesia {
+    width: 168px;
+    height: 130px;
+}
+
+.BigSightLandingPage-Section7-Kemenkes {
+    width: 171px;
+    height: 79px;
+}
+
+.BigSightLandingPage-Section7-SekNatNegara {
+    width: 176px;
+    height: 176px;
+}
+
+.BigSightLandingPage-Section7-Pertamina {
+    width: 243px;
+    height: 57px;
+}
+
+.BigSightLandingPage-Section7-Dishub {
+    width: 76px;
+    height: 89px;
+}
+
+.BigSightLandingPage-Section7-AHM {
+    width: 185px;
+    height: 96px;
+}
+
+.BigSightLandingPage-Section7-Column-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.BigSightLandingPage-Section7-Logo-Container {
+    padding-top: 64px;
+}
+
+.BigSightLandingPage-Section7-Title2 {
+    font-family: poppins-700;
+    font-size: 30px;
+    line-height: 100%;
+    /* identical to box height, or 30px */
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 78px;
+    color: #323232;
+}

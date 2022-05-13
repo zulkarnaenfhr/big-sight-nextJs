@@ -6,6 +6,7 @@ import LandingPageSection3 from "../containers/LandingPage/LandingPage-Section3/
 import LandingPageSection4 from "../containers/LandingPage/LandingPage-Section4/LandingPage-Section4";
 import LandingPageSection5 from "../containers/LandingPage/LandingPage-Section5/LandingPage-Section5";
 import LandingPageSection6 from "../containers/LandingPage/LandingPage-Section6/LandingPage-Section6";
+import LandingPageSection7 from "../containers/LandingPage/LandingPage-Section7/LandingPage-Section7";
 import BigSightNavbar from "../containers/Navbar/BigSightNavbar";
 import styles from "./LandingPage.module.css";
 
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
                 <LandingPageSection4 />
                 <LandingPageSection5 />
                 <LandingPageSection6 />
+                <LandingPageSection7 />
             </div>
         </div>
     );

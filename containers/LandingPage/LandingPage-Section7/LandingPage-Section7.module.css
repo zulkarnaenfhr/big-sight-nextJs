@@ -1,0 +1,70 @@
+#LandingPage-Section7 {
+    width: 100vw;
+    min-height: 553px;
+    background: white;
+    position: relative;
+}
+
+.LandingPage-Section7-Title {
+    font-family: poppins-700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323232;
+    padding-top: 73px;
+}
+
+.LandingPage-Section7-RowLogo-Container {
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.LandingPage-Section7-Column-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LandingPage-Section7-Telkom-Wrapper {
+    width: 168px;
+    height: 130px;
+}
+
+.LandingPage-Section7-Kemenkes-Wrapper {
+    width: 171px;
+    height: 79px;
+}
+
+.LandingPage-Section7-Seknat-Negara-Wrapper {
+    width: 176px;
+    height: 176px;
+}
+
+.LandingPage-Section7-Pertamina-Wrapper {
+    width: 243px;
+    height: 57px;
+}
+
+.LandingPage-Section7-Dishub-Wrapper {
+    width: 76px;
+    height: 89px;
+}
+
+.LandingPage-Section7-AHM-Wrapper {
+    width: 185px;
+    height: 96px;
+}
+
+.LandingPage-Section7-Title2 {
+    font-family: poppins-700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 78px;
+    color: #323232;
+    margin-bottom: 73px;
+}
