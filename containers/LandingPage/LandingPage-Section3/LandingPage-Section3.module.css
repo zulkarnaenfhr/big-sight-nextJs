@@ -1,8 +1,9 @@
 #LandingPage-Section3 {
     width: 100vw;
-    height: 793px;
+    min-height: 793px;
     background-color: #002145;
     color: white;
+    padding-bottom: 56px;
 }
 
 .LandingPage-Section3-Title {
@@ -13,10 +14,6 @@
     text-transform: uppercase;
     color: #ffffff;
     padding-top: 56px;
-}
-
-.LandingPage-Section3-Row1 {
-    padding-top: 75px;
 }
 
 .LandingPage-Section3-Content-Container {
@@ -66,4 +63,23 @@
     letter-spacing: 0.005em;
     margin-top: 26px;
     color: #ffffff;
+}
+
+.LandingPage-Section3-Column-PaddingTop-Container {
+    padding-top: 75px;
+}
+
+@media screen and (max-width: 768px) {
+    .LandingPage-Section3-Column-Right-Container {
+        padding-top: 75px;
+    }
+    .LandingPage-Section3-Column-PaddingTop-Container {
+        padding-top: 45px;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .LandingPage-Section3-Title {
+        font-size: calc(0.9 * 30px);
+    }
 }
