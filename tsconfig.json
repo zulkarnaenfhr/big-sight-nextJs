@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Card/LandingPage/CardBigSightLandingPage.jsx", "containers/LandingPage/LandingPage-Section5/LandingPage-Section5.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Card/LandingPage/CardBigSightLandingPage.jsx", "containers/LandingPage/LandingPage-Section5/LandingPage-Section5.jsx", "containers/Footer/rcc"],
   "exclude": ["node_modules"]
 }

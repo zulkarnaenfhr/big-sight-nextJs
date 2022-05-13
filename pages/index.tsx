@@ -9,7 +9,10 @@ import LandingPageSection6 from "../containers/LandingPage/LandingPage-Section6/
 import LandingPageSection7 from "../containers/LandingPage/LandingPage-Section7/LandingPage-Section7";
 import LandingPageSection8 from "../containers/LandingPage/LandingPage-Section8/LandingPage-Section8";
 import BigSightNavbar from "../containers/Navbar/BigSightNavbar";
+import BeforeFooterBighSight from "../containers/Footer/BeforeFooterBighSight";
+import FooterBigSight from "../containers/Footer/Footer";
 import styles from "./LandingPage.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home: NextPage = () => {
     return (
@@ -32,7 +35,8 @@ const Home: NextPage = () => {
                 <LandingPageSection6 />
                 <LandingPageSection7 />
                 <LandingPageSection8 />
-                <LandingPageSection5 />
+                <BeforeFooterBighSight />
+                <FooterBigSight />
             </div>
         </div>
     );

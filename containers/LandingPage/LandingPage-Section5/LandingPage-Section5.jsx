@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 import CardBigSightLandingPage from "../../../components/Card/LandingPage/CardBigSightLandingPage";
 import styles from "./LandingPage-Section5.module.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 class LandingPageSection5 extends Component {
     constructor(props) {
