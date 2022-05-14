@@ -1,5 +1,10 @@
 import Head from "next/head";
 import BigSightNavbar from "../../containers/Navbar/BigSightNavbar";
+import PartnershipPageSection1 from "../../containers/PartnershipPage/PartnershipPage-Section1/PartnershipPage-Section1";
+import PartnershipPageSection2 from "../../containers/PartnershipPage/PartnershipPage-Section2/PartnershipPage-Section2";
+import BeforeFooterBighSight from "../../containers/Footer/BeforeFooterBighSight";
+import FooterBigSight from "../../containers/Footer/Footer";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Index = () => {
@@ -14,7 +19,12 @@ const Index = () => {
       <div className={"Navbar-Container"}>
         <BigSightNavbar />
       </div>
-      <div className={"Content-Container"}></div>
+      <div className={"Content-Container"}>
+        <PartnershipPageSection1 />
+        <PartnershipPageSection2 />
+        <BeforeFooterBighSight />
+        <FooterBigSight />
+      </div>
     </div>
   );
 };
