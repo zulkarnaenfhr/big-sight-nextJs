@@ -1,0 +1,98 @@
+#Faq-Section1 {
+    width: 100vw;
+    min-height: 620px;
+}
+
+.Faq-Section1-Content-Container {
+    padding-top: 133px;
+}
+
+.Faq-Section1-Title {
+    font-family: poppins-900;
+    font-size: 50px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #ee2e24;
+}
+
+/* .Faq-Section1-Collapse-Container {
+    width: 100vw;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #d34a4a;
+    color: #d34a4a;
+}
+
+.Faq-Section1-Collapse-Container > button {
+    height: 75px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #d34a4a;
+    font-size: 27px;
+    font-family: poppins-700;
+    letter-spacing: 0.04em;
+    text-align: left;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.Faq-Section1-Collapse-Row-Question {
+    border: 1px solid red;
+}
+
+.Faq-Section1-Collapse-Row-Question-Right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.Faq-Section1-divCollaps {
+    margin-left: 34px;
+    margin-right: 34px;
+    height: calc(auto + 34px);
+}
+
+.Faq-Section1-divCollapse-Container {
+    width: 90%;
+    font-family: poppins-600;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.005em;
+} */
+
+.Faq-Section1-Accordian-Row-Container {
+    border: 2px solid #d34a4a;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: transparent;
+}
+
+.Faq-Section1-Accordian-Question-Container {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    background-color: transparent;
+}
+
+.Faq-Section1-Accordian-Question-Button {
+    min-height: 75px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #d34a4a;
+    font-size: 27px;
+    font-family: nunitoSans-700;
+    letter-spacing: 0.04em;
+    text-align: left;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
