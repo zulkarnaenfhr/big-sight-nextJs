@@ -1,6 +1,6 @@
 #LandingPage-Section2 {
     width: 100%;
-    height: 700px;
+    height: auto;
     position: relative;
     border: 1px solid red;
     padding: 60px 47px;
@@ -17,11 +17,10 @@
 
 .LandingPage-Section2-right {
     height: 100%;
-    /* border: 1px solid rgb(2, 123, 151); */
 }
 
 .LandingPage-Section2-Right-Card {
-    width: 440px;
+    width: 400px;
     background-color: rgba(242, 244, 248, 1);
     border: unset;
     border-radius: unset;
@@ -29,7 +28,7 @@
 }
 
 .LandingPage-Section2-Right-Card-Body {
-    padding: 20px 50px 30px 50px;
+    padding: 20px 60px 30px 60px;
 }
 
 .LandingPage-Section2-Right-Card-Title {
@@ -50,15 +49,113 @@
 }
 
 
-/* corausel  */
+/* costume dots */
 
-.carousel-button-group {
-    margin-top: 35px;
+.button__bar {
+    display: block;
+    margin-top: 30px;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    width: auto;
     float: right;
+    text-align: center;
 }
 
-#LandingPage-Section2-button {
-    all: unset;
-    font-size: 20px;
-    padding: 10px;
+.button__bar li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0;
+}
+
+.button__bar li button {
+    border: none;
+    background: #EAEAEA;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px;
+}
+
+.button__bar :global(li.slick-active) button {
+    background-color: #EE2E24;
+}
+
+.slick-slide img {
+    border: 5px solid #fff;
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 200px) and (max-width: 912px) {
+    #LandingPage-Section2 {
+        /* width: 100%; */
+        padding: 60px 20px;
+        /* position: relative; */
+        /* border: 1px solid red; */
+        /* padding: 60px 47px; */
+    }
+    .LandingPage-Section2-Right-Card {
+        float: unset;
+        margin: 0 auto;
+    }
+    .LandingPage-Section2-Left-content-Title {
+        margin-bottom: 40px;
+    }
+    .button__bar {
+        /* display: block; */
+        margin-top: 50px;
+        /* padding: 0; */
+        /* background: rgba(255, 255, 255, 0.3); */
+        /* border-radius: 40px; */
+        /* width: auto; */
+        float: unset;
+        /* text-align: center; */
+    }
+}
+
+@media (width:1280px) {
+    .LandingPage-Section2-Right-Card {
+        width: 370px;
+    }
+}
+
+@media (width:1024px) {
+    .LandingPage-Section2-Right-Card {
+        width: 280px;
+    }
+}
+
+@media (width:820px) {
+    .LandingPage-Section2-Right-Card {
+        width: 350px;
+    }
+}
+
+@media (width:768px) {
+    .LandingPage-Section2-Right-Card {
+        width: 330px;
+    }
+}
+
+@media (min-width:200px) and (max-width:540px) {
+    .LandingPage-Section2-Right-Card {
+        width: 315px;
+    }
+}
+
+@media (width:360px) {
+    .LandingPage-Section2-Right-Card {
+        width: 295px;
+    }
+}
+
+@media (width:412px) {
+    .LandingPage-Section2-Right-Card {
+        width: 348px;
+    }
 }
