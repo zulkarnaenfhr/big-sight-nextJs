@@ -202,3 +202,16 @@
     font-size: 16px;
     color: #ffffff;
 }
+
+@media screen and (max-width: 992px) {
+    .ContactUs-Section1-Left-Column {
+        display: none;
+    }
+    .ContactUs-Section1-Form-Container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .ContactUs-Section1-Form-Content-Right-Container {
+        margin-bottom: 55px;
+    }
+}

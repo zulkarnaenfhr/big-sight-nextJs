@@ -19,7 +19,7 @@ class ContactUsSection1 extends Component {
             <div id={styles["ContactUs-Section1"]}>
                 <div className={styles["ContactUs-Section1-Form-Container"]}>
                     <Row>
-                        <Col sm={12} lg={5} className={styles["ContactUs-Section1-Left-Column"]}>
+                        <Col lg={5} className={styles["ContactUs-Section1-Left-Column"]}>
                             <div className={styles["ContactUs-Section1-Left-Parent-Content-Container"]}>
                                 <div className={styles["ContactUs-Section1-Left-Container"]}>
                                     <div className={styles["ContactUs-Section1-Left-Content-Container"]}>
@@ -29,7 +29,7 @@ class ContactUsSection1 extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col className={styles["ContactUs-Section1-Form-Content-Right-Container"]} sm={12} lg={7}>
+                        <Col className={styles["ContactUs-Section1-Form-Content-Right-Container"]} lg={7}>
                             <div className={styles["ContactUs-Section1-Right-Parent-Content-Container"]}>
                                 <form className={styles["ContactUs-Section1-Right-Form-Container"]} action="mailto:someone@example.com" method="post" encType="text/plain">
                                     <Row>
@@ -70,7 +70,7 @@ class ContactUsSection1 extends Component {
                                             <Col>
                                                 <label className={styles["ContactUs-Section1-RadioButton-Container"]}>
                                                     <span className={styles["ContactUs-Section1-RadioButton-Container-ProductName"]}>Legal Analytics</span>
-                                                    <input type="radio" name="Product" value="Legal Analytics" checked required />
+                                                    <input type="radio" name="Product" value="Legal Analytics" required />
                                                     <span className={styles["checkmark"]}>
                                                         <FontAwesomeIcon icon={faCheck} />
                                                     </span>
