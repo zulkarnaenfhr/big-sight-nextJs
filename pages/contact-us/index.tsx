@@ -3,6 +3,8 @@ import React from "react";
 import BigSightNavbar from "../../containers/Navbar/BigSightNavbar";
 import ContactUsSection1 from "../../containers/ContactUs/ContactUs-Section1/ContactUs-Section1";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BeforeFooterBighSight from "../../containers/Footer/BeforeFooterBighSight";
+import FooterBigSight from "../../containers/Footer/Footer";
 
 export default function contactUs() {
     return (
@@ -18,6 +20,8 @@ export default function contactUs() {
             </div>
             <div className={"Content-Container"}>
                 <ContactUsSection1 />
+                <BeforeFooterBighSight />
+                <FooterBigSight />
             </div>
         </div>
     );
