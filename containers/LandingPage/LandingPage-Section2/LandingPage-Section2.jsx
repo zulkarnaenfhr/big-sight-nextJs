@@ -3,7 +3,6 @@ import Carousel from "react-multi-carousel";
 import styles from "./LandingPage-Section2.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeftLong, faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function LandingPageSection1() {
     const responsive = {

@@ -2,10 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare, faLinkedin, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import styles from "./BeforeFooterBighSight.module.css";
 
 const BeforeFooterBighSight = () => {
     return (
-        <div className="d-flex pb-5 pt-5 flex-sm-row flex-column" id="Bighsight-BeforeFooter-section" style={{ backgroundColor: "rgba(247, 247, 247, 1)" }}>
+        <div className="d-flex pb-5 pt-5 flex-sm-row flex-column" id="Bighsight-BeforeFooter-section" style={{ backgroundColor: "rgba(247, 247, 247, 1)", paddingBottom: "90px" }}>
             <div id="Bighsight-section-location" className="col-sm-4 col d-flex flex-column justify-content-end align-items-center">
                 <Image src={require("../../src/Big-Sight/LogoBigSight.png")} width={300} height={170} />
                 <section className="w-75" style={{ height: "220px" }}>
@@ -30,8 +31,10 @@ const BeforeFooterBighSight = () => {
                     <h6 className="pt-sm-5 pt-4">Contact Integrated Dashboard Smart Governments</h6>
                 </section>
             </div>
-            <div id="Bighsight-section-img" className="col-sm-4 col align-self-end text-sm-start text-center">
-                <Image src={require("../../src/Big-Sight/LogoRight.png")} width={318} height={230} />
+            <div id="Bighsight-section-img" className="col-sm-4 col align-self-sm-end text-sm-start text-center">
+                <div className={styles["BeforeFooter-LogoRight-Wrapper"]}>
+                    <Image src={require("../../src/Big-Sight/LogoRight.png")} />
+                </div>
             </div>
         </div>
     );
