@@ -2,6 +2,8 @@
     width: 100vw;
     min-height: 458px;
     background: #f7f7f7;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .BeforeFooter-Logo {
@@ -15,7 +17,7 @@
     font-family: poppins-700;
     font-size: 18px;
     line-height: 27px;
-    height: 81px;
+    min-height: 81px;
     color: #484848;
 }
 
@@ -37,11 +39,11 @@
 }
 
 .BeforeFooter-Middle-Row1 {
-    height: 187px;
+    min-height: 10em;
 }
 
 .BeforeFooter-Middle-Row2 {
-    height: 81px;
+    min-height: 7em;
 }
 
 .BeforeFooter-Middle-Sosmed-Container {
@@ -66,4 +68,46 @@
     max-width: 318px;
     max-height: 230px;
     margin-top: 154px;
+}
+
+@media screen and (max-width: 992px) {
+    .BeforeFooter-Middle-Row2 {
+        min-height: 6em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .BeforeFooter-Middle-Row2 {
+        min-height: 5em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .BeforeFooter-Middle-Row2 {
+        min-height: 4em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .BeforeFooter-Middle-Row2 {
+        min-height: 4em;
+    }
+    .BeforeFooter-Left-Title {
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+        min-height: 40px;
+    }
+    .BeforeFooter-Middle-Row1 {
+        min-height: 0px;
+    }
+    .BeforeFooter-Middle-Row2 {
+        min-height: 0px;
+    }
+    .BeforeFooter-Right-Logo-Wrapper {
+        margin-top: 0px;
+    }
+    .BeforeFooter-Content-Container{
+        padding-bottom: 50px;
+    }
 }
