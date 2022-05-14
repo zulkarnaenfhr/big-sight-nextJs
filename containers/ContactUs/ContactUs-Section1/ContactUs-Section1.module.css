@@ -16,6 +16,8 @@
     top: 219px;
     background: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .ContactUs-Section1-Left-Container {
@@ -73,6 +75,54 @@
 
 .ContactUs-Section1-Form-Content-Right-Container {
     border: 1px solid red;
+}
+
+.ContactUs-Section1-Right-Parent-Content-Container {
+    width: 100%;
+    height: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactUs-Section1-Right-InputGroup {
+    padding-top: 55px;
+}
+
+.ContactUs-Section1-Right-Label {
+    font-family: poppins-500;
+    font-size: 17px;
+    color: #000000;
+}
+
+.ContactUs-Section1-Right-Text-Input {
+    width: 100%;
+    height: 49px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #adadad;
+}
+
+.ContactUs-Section1-Right-TextArea-Input {
+    width: 100%;
+    height: 49px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #adadad;
+}
+
+.ContactUs-Section1-Right-Label-RadioGroup {
+    font-family: poppins-700;
+    font-size: 17px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.ContactUs-Section1-Right-Label-Radio {
+    font-family: poppins-500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #000000;
 }
 
 .ContactUs-Section1-Right-Radio-Row {

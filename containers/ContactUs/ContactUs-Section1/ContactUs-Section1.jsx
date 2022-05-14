@@ -27,71 +27,84 @@ class ContactUsSection1 extends Component {
                             </div>
                         </Col>
                         <Col className={styles["ContactUs-Section1-Form-Content-Right-Container"]} sm={12} lg={7}>
-                            <form action="mailto:someone@example.com" method="post" encType="text/plain" className="BigSight-ContactUs-Section1-Form-Container">
-                                <Row>
-                                    <Col>
-                                        <label htmlFor="">First Name</label>
-                                        <br />
-                                        <input className="container" placeholder="First Name" type="text" name="First Name" />
-                                    </Col>
-                                    <Col>
-                                        <label htmlFor="">Last Name</label>
-                                        <br />
-                                        <input className="container" placeholder="Last Name" type="text" name="Last Name" />
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col>
-                                        <label htmlFor="">E-Mail</label>
-                                        <br />
-                                        <input className="container" placeholder="youremail@example.com" type="text" name="na1me" />
-                                    </Col>
-                                    <Col>
-                                        <label htmlFor="">Phone</label>
-                                        <br />
-                                        <input className="container" placeholder="08123456789101" type="text" name="Email" />
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <p>What the of product do you need</p>
+                            <div className={styles["ContactUs-Section1-Right-Parent-Content-Container"]}>
+                                <form action="mailto:someone@example.com" method="post" encType="text/plain">
                                     <Row>
-                                        <div className={styles["ContactUs-Section1-Right-Radio-Row"]}>
-                                            <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
-                                                {" "}
-                                                <input type="radio" name="Produk Interest" value={"Legal Analytics"} id="" /> Legal Analytics
+                                        <Col className={styles["ContactUs-Section1-Right-InputGroup"]}>
+                                            <label className={styles["ContactUs-Section1-Right-Label"]} htmlFor="">
+                                                First Name
                                             </label>
-                                            <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
-                                                {" "}
-                                                <input type="radio" name="Produk Interest" value={"Big View"} id="" /> Big View
+                                            <br />
+                                            <input className={styles["ContactUs-Section1-Right-Text-Input"]} type="text" name="First Name" />
+                                        </Col>
+                                        <Col className={styles["ContactUs-Section1-Right-InputGroup"]}>
+                                            <label className={styles["ContactUs-Section1-Right-Label"]} htmlFor="">
+                                                Last Name
                                             </label>
-                                            <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
-                                                {" "}
-                                                <input type="radio" name="Produk Interest" value={"Picaso"} id="" /> Picaso
-                                            </label>
-                                        </div>
+                                            <br />
+                                            <input className={styles["ContactUs-Section1-Right-Text-Input"]} type="text" name="Last Name" />
+                                        </Col>
                                     </Row>
                                     <Row>
-                                        <div className={styles["ContactUs-Section1-Right-Radio-Row"]}>
-                                            <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
-                                                {" "}
-                                                <input type="radio" name="Produk Interest" value={"Smarteye.id"} id="" /> Smarteye.id
+                                        <Col className={styles["ContactUs-Section1-Right-InputGroup"]}>
+                                            <label className={styles["ContactUs-Section1-Right-Label"]} htmlFor="">
+                                                E-Mail
                                             </label>
-                                            <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
-                                                {" "}
-                                                <input type="radio" name="Produk Interest" value={"Big Score"} id="" /> Big Score
+                                            <br />
+                                            <input className={styles["ContactUs-Section1-Right-Text-Input"]} type="text" name="na1me" />
+                                        </Col>
+                                        <Col className={styles["ContactUs-Section1-Right-InputGroup"]}>
+                                            <label className={styles["ContactUs-Section1-Right-Label"]} htmlFor="">
+                                                Phone
                                             </label>
-                                            <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
-                                                {" "}
-                                                <input type="radio" name="Produk Interest" value={"Big Box"} id="" /> Big Box
-                                            </label>
-                                        </div>
+                                            <br />
+                                            <input className={styles["ContactUs-Section1-Right-Text-Input"]} type="text" name="Email" />
+                                        </Col>
                                     </Row>
-                                </Row>
-                                <label htmlFor="">Message</label>
-                                <br />
-                                <textarea className="container" placeholder="Message" type="text" name="Phone Number" cols="30" rows="10" />
-                                <button type="submit">Submit</button>
-                            </form>{" "}
+                                    <Row>
+                                        <p className={`${styles["ContactUs-Section1-Right-Label-RadioGroup"]} ${styles["ContactUs-Section1-Right-InputGroup"]}`}>What the of product do you need</p>
+                                        <Row>
+                                            <div className={styles["ContactUs-Section1-Right-Radio-Row"]}>
+                                                {" "}
+                                                <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
+                                                    <input type="radio" name="Produk Interest" value={"Legal Analytics"} id="" /> <span className={styles["ContactUs-Section1-Right-Label-Radio"]}> Legal Analytics</span>{" "}
+                                                </label>{" "}
+                                                <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
+                                                    <input type="radio" name="Produk Interest" value={"Big View"} id="" />
+                                                    <span className={styles["ContactUs-Section1-Right-Label-Radio"]}> Big View </span>
+                                                </label>{" "}
+                                                <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
+                                                    <input type="radio" name="Produk Interest" value={"Picaso"} id="" />
+                                                    <span className={styles["ContactUs-Section1-Right-Label-Radio"]}> Picaso </span>
+                                                </label>{" "}
+                                            </div>
+                                        </Row>
+                                        <Row>
+                                            <div className={styles["ContactUs-Section1-Right-Radio-Row"]}>
+                                                {" "}
+                                                <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
+                                                    <input type="radio" name="Produk Interest" value={"Smarteye.id"} id="" />
+                                                    <span className={styles["ContactUs-Section1-Right-Label-Radio"]}> Smarteye.id </span>
+                                                </label>{" "}
+                                                <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
+                                                    <input type="radio" name="Produk Interest" value={"Big Score"} id="" />
+                                                    <span className={styles["ContactUs-Section1-Right-Label-Radio"]}> Big Score </span>
+                                                </label>{" "}
+                                                <label htmlFor="" className={styles["ContactUs-Section1-Right-Radio-Row-Product"]}>
+                                                    <input type="radio" name="Produk Interest" value={"Big Box"} id="" />
+                                                    <span className={styles["ContactUs-Section1-Right-Label-Radio"]}> Big Box </span>
+                                                </label>{" "}
+                                            </div>
+                                        </Row>
+                                    </Row>
+                                    <label className={styles["ContactUs-Section1-Right-Label"]} htmlFor="">
+                                        Message
+                                    </label>
+                                    <br />
+                                    <textarea className={styles["ContactUs-Section1-Right-TextArea-Input"]} type="text" name="Phone Number" cols="30" rows="10" />
+                                    <button type="submit">Submit</button>
+                                </form>{" "}
+                            </div>
                         </Col>
                     </Row>
                 </div>
