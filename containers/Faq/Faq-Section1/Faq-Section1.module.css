@@ -17,56 +17,6 @@
     color: #ee2e24;
 }
 
-/* .Faq-Section1-Collapse-Container {
-    width: 100vw;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #d34a4a;
-    color: #d34a4a;
-}
-
-.Faq-Section1-Collapse-Container > button {
-    height: 75px;
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid transparent;
-    color: #d34a4a;
-    font-size: 27px;
-    font-family: poppins-700;
-    letter-spacing: 0.04em;
-    text-align: left;
-    padding-top: 10px;
-    text-transform: capitalize;
-}
-
-.Faq-Section1-Collapse-Row-Question {
-    border: 1px solid red;
-}
-
-.Faq-Section1-Collapse-Row-Question-Right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-}
-
-.Faq-Section1-divCollaps {
-    margin-left: 34px;
-    margin-right: 34px;
-    height: calc(auto + 34px);
-}
-
-.Faq-Section1-divCollapse-Container {
-    width: 90%;
-    font-family: poppins-600;
-    color: black;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    letter-spacing: 0.005em;
-} */
-
 .Faq-Section1-Accordian-Row-Container {
     border: 2px solid #d34a4a;
     border-radius: 10px;
@@ -110,6 +60,15 @@
     color: #000000;
 }
 
-.Faq-Section1-Accordian-Indicator {
+/* .Faq-Section1-Accordian-Indicator {
     transform: rotate(45deg);
+} */
+
+@media screen and (max-width: 992px) {
+    .Faq-Section1-Content-Container {
+        padding-top: 60px;
+    }
+    .Faq-Section1-Right-Column {
+        padding-top: 40px;
+    }
 }
