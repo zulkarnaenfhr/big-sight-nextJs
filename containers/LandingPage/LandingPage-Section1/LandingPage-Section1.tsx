@@ -1,6 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./LandingPage-Section1.module.css";
 import { LandingPageSection1Button } from "../../../components/Button/LandingPage/ButtonLandingPage.styled";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function LandingPageSection1() {
     return (
@@ -20,7 +22,10 @@ export default function LandingPageSection1() {
                                     href="#BigSightLandingPage-Section2"
                                 >
                                     <LandingPageSection1Button>
-                                        See Details <img src="https://i.ibb.co/Bq9580y/panah-bawah.png" alt="panah-bawah"></img>
+                                        See Details{" "}
+                                        <span className={styles["LandingPage-Section1-Button-Span-Arrow"]}>
+                                            <FontAwesomeIcon icon={faAngleRight} />
+                                        </span>
                                     </LandingPageSection1Button>
                                 </a>
                             </div>

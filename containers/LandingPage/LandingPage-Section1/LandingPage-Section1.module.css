@@ -37,6 +37,10 @@
     text-transform: capitalize;
 }
 
+.LandingPage-Section1-Button-Span-Arrow {
+    margin-left: 12px;
+}
+
 @media screen and (max-width: 992px) {
     .LandingPage-Section1-Left-Content-Container {
         margin-left: 0px;
