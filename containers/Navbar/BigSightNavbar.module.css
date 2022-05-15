@@ -12,8 +12,9 @@
 }
 
 .BigSightNavbarLogo {
-    width: 148px;
-    height: 87px;
+    width: 218px;
+    height: 141px;
+    border: 1px solid red;
 }
 
 .BigSightnavbarMenu-container {
