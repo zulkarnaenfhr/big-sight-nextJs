@@ -5,6 +5,7 @@
 
 .Faq-Section1-Content-Container {
     padding-top: 133px;
+    padding-bottom: 50px;
 }
 
 .Faq-Section1-Title {
@@ -69,6 +70,7 @@
 .Faq-Section1-Accordian-Row-Container {
     border: 2px solid #d34a4a;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .card-header {
@@ -95,4 +97,19 @@
     text-align: left;
     padding-top: 10px;
     text-transform: capitalize;
+}
+
+.Faq-Section1-Accordian-Answer {
+    font-family: nunitoSans-600;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: justify;
+    letter-spacing: 0.005em;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #000000;
+}
+
+.Faq-Section1-Accordian-Indicator {
+    transform: rotate(45deg);
 }

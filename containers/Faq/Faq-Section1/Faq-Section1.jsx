@@ -5,7 +5,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function CustomToggle({ children, eventKey }) {
-    const decoratedOnClick = useAccordionButton(eventKey, () => console.log("totally custom!"));
+    const decoratedOnClick = useAccordionButton(eventKey);
 
     return (
         <button type="button" className={styles["Faq-Section1-Accordian-Question-Button"]} onClick={decoratedOnClick}>
@@ -24,7 +24,7 @@ class FaqSection1 extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick = () => {
-        console.log("masuk");
+        console.log("masuks");
     };
     render() {
         return (
@@ -73,10 +73,21 @@ class FaqSection1 extends Component {
                                 <Accordion defaultActiveKey="0">
                                     <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
                                         <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="0">Apa itu Big Sight?</CustomToggle>
+                                            <CustomToggle eventKey="0">
+                                                <Row>
+                                                    <Col sm={11} xs={11}>
+                                                        Apa itu Big Sight?
+                                                    </Col>
+                                                    <Col sm={1} xs={1}>
+                                                        <FontAwesomeIcon className={styles["Faq-Section1-Accordian-Indicator"]} icon={faPlus} />
+                                                    </Col>
+                                                </Row>
+                                            </CustomToggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="0">
-                                            <Card.Body>Penyedia solusi big data analytic yang ditawarkan oleh Telkom Indonesia yang dapat digunakan untuk pemerintahan dan perusahaan.</Card.Body>
+                                            <Card.Body>
+                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Penyedia solusi big data analytic yang ditawarkan oleh Telkom Indonesia yang dapat digunakan untuk pemerintahan dan perusahaan.</p>
+                                            </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
@@ -84,7 +95,9 @@ class FaqSection1 extends Component {
                                             <CustomToggle eventKey="1">Apa saja Produk dan Solusi dari BigSight?</CustomToggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="1">
-                                            <Card.Body>BigSight terdiri dari 6 Produk, untuk lebih lengkapnya bisa mengakses menu “Product”</Card.Body>
+                                            <Card.Body>
+                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight terdiri dari 6 Produk, untuk lebih lengkapnya bisa mengakses menu “Product”</p>
+                                            </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
@@ -92,7 +105,9 @@ class FaqSection1 extends Component {
                                             <CustomToggle eventKey="2">Bagaimana cara berlangganan atau bekerjasama dengan BigSight?</CustomToggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="2">
-                                            <Card.Body>Anda dapat menghubungi Customer Service kami di “Contact Us”</Card.Body>
+                                            <Card.Body>
+                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Anda dapat menghubungi Customer Service kami di “Contact Us”</p>
+                                            </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
@@ -100,7 +115,9 @@ class FaqSection1 extends Component {
                                             <CustomToggle eventKey="3">Berapa Harga untuk berlangganan?</CustomToggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="3">
-                                            <Card.Body>Untuk Harga bisa menghubungi Customer Service kami atau datang ke Kantor kami di “Contact Us”</Card.Body>
+                                            <Card.Body>
+                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Untuk Harga bisa menghubungi Customer Service kami atau datang ke Kantor kami di “Contact Us”</p>
+                                            </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
@@ -109,12 +126,14 @@ class FaqSection1 extends Component {
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="4">
                                             <Card.Body>
-                                                <ul>
-                                                    <li>Memberikan solusi untuk pengimplementasian sistem digitalisasi</li>
-                                                    <li>Menciptakan data - data yang saling terintegrasi</li>
-                                                    <li>Mempersingkat waktu dan biaya operasional</li>
-                                                    <li>Mudah untuk digunakan</li>
-                                                </ul>
+                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>
+                                                    <ul>
+                                                        <li>Memberikan solusi untuk pengimplementasian sistem digitalisasi</li>
+                                                        <li>Menciptakan data - data yang saling terintegrasi</li>
+                                                        <li>Mempersingkat waktu dan biaya operasional</li>
+                                                        <li>Mudah untuk digunakan</li>
+                                                    </ul>
+                                                </p>
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
@@ -123,7 +142,9 @@ class FaqSection1 extends Component {
                                             <CustomToggle eventKey="5">Bagaimana jenis arsitektur dalam mengimplementasikan Produk dan Solusi dari BigSight?</CustomToggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="5">
-                                            <Card.Body>BigSight menyediakan arsitektur On Premise ataupun On Cloud, untuk informasi lebih lanjut bisa menghubungi di “Contact Us”</Card.Body>
+                                            <Card.Body>
+                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight menyediakan arsitektur On Premise ataupun On Cloud, untuk informasi lebih lanjut bisa menghubungi di “Contact Us”</p>
+                                            </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
@@ -131,7 +152,9 @@ class FaqSection1 extends Component {
                                             <CustomToggle eventKey="6">Apakah user dapat mengajukan kustomisasi produk atau layanan?</CustomToggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="6">
-                                            <Card.Body>Ya</Card.Body>
+                                            <Card.Body>
+                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Ya</p>
+                                            </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
@@ -139,7 +162,9 @@ class FaqSection1 extends Component {
                                             <CustomToggle eventKey="7">Apakah user dapat mencoba Produk dan Layanan dari BigSight melalui Demo atau Free Trial?</CustomToggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="7">
-                                            <Card.Body>Ya, User dapat menghubungi Customer Service kami di “Contact Us” atau Customer Service Produk dan Layanan terkait.</Card.Body>
+                                            <Card.Body>
+                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Ya, User dapat menghubungi Customer Service kami di “Contact Us” atau Customer Service Produk dan Layanan terkait.</p>
+                                            </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
                                 </Accordion>
