@@ -1,7 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React, { Component } from "react";
 import styled from "styled-components";
 import styles from "./CardBigSightLandingPage.module.css";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const CardBigSightLandingPageLogoContainer = styled.div`
     width: ${(props) => props.width};
@@ -22,7 +24,7 @@ class CardBigSightLandingPage extends Component {
                     <button className={styles["CardBigSightLandingPage-Button"]}>
                         View More
                         <span className={styles["CardBigSightLandingPage-Button-ArrowRight"]}>
-                            <Image width={12} height={12} src={require("../../../src/Big-Sight/Vector/arrow-right.png")} />
+                            <FontAwesomeIcon icon={faArrowRight} />
                         </span>
                     </button>
                 </a>{" "}
