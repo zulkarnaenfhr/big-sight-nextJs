@@ -16,9 +16,9 @@ const Index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={"Navbar-Container"}>
+      {/* <div className={"Navbar-Container"}>
         <BigSightNavbar />
-      </div>
+      </div> */}
       <div className={"Content-Container"}>
         <PartnershipPageSection1 />
         <PartnershipPageSection2 />

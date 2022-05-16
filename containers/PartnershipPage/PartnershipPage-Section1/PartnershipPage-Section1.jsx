@@ -4,7 +4,7 @@ import styles from "../PartnershipPage-Section1/PartnershipPage-Section1.module.
 
 export default function PartnershipPageSection1() {
   return (
-    <div id={styles["PartnershipPage-Section1"]} style={{ height: "430px" }}>
+    <div id={styles["PartnershipPage-Section1"]}>
       <div className={styles["PartnershipPage-Section1-content-container"]}>
         <div className={styles["logo-bigsight"]}>
           <Image src={LogoBigSight} />
