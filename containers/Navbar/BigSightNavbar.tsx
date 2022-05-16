@@ -100,6 +100,11 @@ export default function BigSightNavbar() {
                                     </NavDropdown.Item>
                                 </Link>{" "}
                             </NavDropdown>
+                            <Link href="/faq" passHref>
+                                <Nav.Link className={styles.BigSightNavbarMenuMarginLeft}>
+                                    <p className={styles.BigSightNavbarMenu}>faq</p>
+                                </Nav.Link>
+                            </Link>
                             <Row className={styles["NavbarButton-Container"]}>
                                 <Link passHref href={"/notset"}>
                                     <NavbarButton backgroundColor={"#EE2E24"} border={"1px solid #EE2E24"} color={"white"} hoverBackgroundColor={"white"} hoverBorder={"1px solid #EE2E24"} hoverColor={"#EE2E24"}>

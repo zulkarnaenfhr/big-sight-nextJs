@@ -29,13 +29,13 @@ const Home: NextPage = () => {
             </div>
             <div className={"Content-Container"}>
                 <LandingPageSection1 />
-                <LandingPageSection2 />
+                {/* <LandingPageSection2 /> */}
                 <LandingPageSection3 />
-                <LandingPageSection4 />
+                {/* <LandingPageSection4 />
                 <LandingPageSection5 />
                 <LandingPageSection6 />
                 <LandingPageSection7 />
-                <LandingPageSection8 />
+                <LandingPageSection8 /> */}
                 <BeforeFooterBighSight />
                 <FooterBigSight />
             </div>
