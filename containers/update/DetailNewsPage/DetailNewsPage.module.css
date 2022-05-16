@@ -1,0 +1,21 @@
+#DetailNewsPage {
+    height: auto;
+    padding: 50px 100px;
+}
+
+.DetailNEwsPage-content-img {
+    margin-bottom: 32px;
+}
+
+.DetailNEwsPage-content-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+
+.DetailNEwsPage-content-desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}

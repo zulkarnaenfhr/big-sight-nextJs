@@ -4,6 +4,7 @@ import news1 from "../../../src/Big-Sight/LandingPage/news/news1.png";
 import news2 from "../../../src/Big-Sight/LandingPage/news/news2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function UpdatePageSection1() {
   return (
@@ -24,10 +25,12 @@ export default function UpdatePageSection1() {
             Peluang pelanggan dalam melakukan cross sell dan/atau up sell
             sebagai penawaran terhadap pelanggan
           </h3>
-          <button className={styles["UpdatePage-Section2-content-button"]}>
-            <span style={{ marginRight: "15px" }}>View more</span>{" "}
-            <FontAwesomeIcon icon={faAngleRight} />
-          </button>
+          <Link href="/update/1">
+            <button className={styles["UpdatePage-Section2-content-button"]}>
+              <span style={{ marginRight: "15px" }}>View more</span>{" "}
+              <FontAwesomeIcon icon={faAngleRight} />
+            </button>
+          </Link>
         </div>
       </div>
       <div
