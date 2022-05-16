@@ -17,7 +17,6 @@
 .LandingPage-Section6-Content-Parent-Container {
     display: flex;
     justify-content: center;
-    border: 1px solid green;
     margin-top: 88px;
 }
 
@@ -25,7 +24,6 @@
     width: 100%;
     max-width: 931px;
     min-height: 214px;
-    border: 1px solid red;
 }
 
 .LandingPage-Section6-Cloudera-Logo-Container {
@@ -84,7 +82,7 @@
     .LandingPage-Section6-Content-Parent-Container {
         padding-bottom: 80px;
     }
-    .LandingPage-Section6-PaddingTop-Column2{
+    .LandingPage-Section6-PaddingTop-Column2 {
         padding-top: 88px;
     }
 }

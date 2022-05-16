@@ -2,7 +2,7 @@ import styles from "./BigSightNavbar.module.css";
 import { Navbar, Container, Nav, NavDropdown, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import LogoBigSight from "../../src/Big-Sight/LogoBigSightNavbar.png";
+import LogoBigSight from "../../src/Big-Sight/LogoBigSight.png";
 import { NavbarButton } from "../../components/Button/Navbar/NavbarButton.styled";
 
 export default function BigSightNavbar() {
