@@ -21,6 +21,7 @@
 
 .LandingPage-Section2-Right-Card {
     width: auto;
+    min-height: 550px;
     background-color: rgba(242, 244, 248, 1);
     border: unset;
     border-radius: unset;
@@ -48,6 +49,7 @@
     margin: 0 auto;
     background-color: #ee2e24;
 }
+
 
 /* costume dots */
 

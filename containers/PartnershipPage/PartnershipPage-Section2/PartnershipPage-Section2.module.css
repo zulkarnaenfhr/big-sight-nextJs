@@ -49,7 +49,7 @@
 }
 
 .PartnershipPage-Section2-partnership-content-icon {
-    width: 80px;
+    width: 100px;
     height: 50%;
     margin-top: 10px;
 }
@@ -70,6 +70,7 @@
     width: 100%;
     margin-top: 20px;
 }
+
 
 /* resolusi > 200px*/
 
@@ -103,6 +104,7 @@
     }
 }
 
+
 /* resolusi 280px */
 
 @media (width: 280px) {
@@ -118,6 +120,7 @@
         margin-bottom: 25px;
     }
 }
+
 
 /* resolusi > 540px */
 
@@ -137,6 +140,7 @@
         margin: 15px auto;
     }
 }
+
 
 /* resolusi > 912px */
 
@@ -160,6 +164,7 @@
     }
 }
 
+
 /* resolusi > 1024px */
 
 @media (min-width: 1024px) and (max-width: 1280px) {
@@ -172,7 +177,6 @@
     }
     .PartnershipPage-Section2-partnership-content-container {
         width: 270px;
-        height: auto;
         padding: 40px 30px;
     }
 }
