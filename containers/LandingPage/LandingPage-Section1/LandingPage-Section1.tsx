@@ -12,9 +12,13 @@ export default function LandingPageSection1() {
                 <Row>
                     <Col lg={5} className={styles["LandingPage-Section1-Left"]}>
                         <div className={styles["LandingPage-Section1-Left-Content-Container"]}>
-                            <p className={styles["LandingPage-Section1-Left-Desc"]}>BIG IMPACT GOOD INSIGHT</p>
-                            <h1 className={styles["LandingPage-Section1-Left-Title"]}>Leverage Your Business Through Big Data Analytics</h1>
-                            <div className={styles["LandingPage-Section1-Button-Container"]}>
+                            <p className={styles["LandingPage-Section1-Left-Desc"]} data-aos="fade-up" data-aos-delay="100">
+                                BIG IMPACT GOOD INSIGHT
+                            </p>
+                            <h1 className={styles["LandingPage-Section1-Left-Title"]} data-aos="fade-up" data-aos-delay="200">
+                                Leverage Your Business Through Big Data Analytics
+                            </h1>
+                            <div className={styles["LandingPage-Section1-Button-Container"]} data-aos="fade-up">
                                 <a
                                     style={{
                                         height: "auto",
@@ -37,7 +41,7 @@ export default function LandingPageSection1() {
                     </Col>
                     <Col col={7} className={styles["LandingPage-Section1-Right-Column"]}>
                         <div className={styles["LandingPage-Section1-Right-Column-Position"]}>
-                            <div className={styles["LandingPage-Section1-Right-Image-Wrapper"]}>
+                            <div className={styles["LandingPage-Section1-Right-Image-Wrapper"]} data-aos-delay="400" data-aos="fade-up">
                                 <Image src={require("../../../src/Big-Sight/LandingPage/Section1-Vector.png")} />
                             </div>
                         </div>

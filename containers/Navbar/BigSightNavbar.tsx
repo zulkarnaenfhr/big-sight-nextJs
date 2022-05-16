@@ -7,7 +7,7 @@ import { NavbarButton } from "../../components/Button/Navbar/NavbarButton.styled
 
 export default function BigSightNavbar() {
     return (
-        <div>
+        <div data-aos="fade-down" data-aos-duration="1000">
             <Navbar className={styles.NavbarBigSight} expand="lg">
                 <Container>
                     <Link href="/" passHref>

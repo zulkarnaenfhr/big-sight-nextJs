@@ -5,13 +5,13 @@ import styles from "./LandingPage-Section3.module.css";
 export default function LandingPageSection3() {
     return (
         <div id={styles["LandingPage-Section3"]}>
-            <h1 className={styles["LandingPage-Section3-Title"]}>
+            <h1 className={styles["LandingPage-Section3-Title"]} data-aos="fade-up" data-aos-delay="0">
                 KEUNTUNGAN MENGGUNAKAN <br /> PRODUK KAMI
             </h1>
             <Container>
                 <Row>
                     <Col md={6} className={styles["LandingPage-Section3-Column-PaddingTop-Container"]}>
-                        <div className={styles["LandingPage-Section3-Content-Container"]}>
+                        <div className={styles["LandingPage-Section3-Content-Container"]} data-aos="fade-up-right" data-aos-delay="0">
                             <div className={styles["LandingPage-Section3-Content-Container-Row1"]}>
                                 <div className={styles["LandingPage-Section3-Content-Container-Row1-Row"]}>
                                     <div className={styles["LandingPage-Section3-Content-Container-Row1-Img-Wrapper"]}>
@@ -26,7 +26,7 @@ export default function LandingPageSection3() {
                         </div>
                     </Col>
                     <Col md={6} className={styles["LandingPage-Section3-Column-PaddingTop-Container"]}>
-                        <div className={styles["LandingPage-Section3-Content-Container"]}>
+                        <div className={styles["LandingPage-Section3-Content-Container"]} data-aos="fade-up-left" data-aos-delay="0">
                             <div className={styles["LandingPage-Section3-Content-Container-Row1"]}>
                                 <div className={styles["LandingPage-Section3-Content-Container-Row1-Row"]}>
                                     <div className={styles["LandingPage-Section3-Content-Container-Row1-Img-Wrapper"]}>
@@ -43,7 +43,7 @@ export default function LandingPageSection3() {
                 </Row>
                 <Row>
                     <Col md={6} className={styles["LandingPage-Section3-Column-PaddingTop-Container"]}>
-                        <div className={styles["LandingPage-Section3-Content-Container"]}>
+                        <div data-aos="fade-up-right" data-aos-delay="0" className={styles["LandingPage-Section3-Content-Container"]}>
                             <div className={styles["LandingPage-Section3-Content-Container-Row1"]}>
                                 <div className={styles["LandingPage-Section3-Content-Container-Row1-Row"]}>
                                     <div className={styles["LandingPage-Section3-Content-Container-Row1-Img-Wrapper"]}>
@@ -58,7 +58,7 @@ export default function LandingPageSection3() {
                         </div>{" "}
                     </Col>
                     <Col md={6} className={styles["LandingPage-Section3-Column-PaddingTop-Container"]}>
-                        <div className={styles["LandingPage-Section3-Content-Container"]}>
+                        <div data-aos="fade-up-left" data-aos-delay="0" className={styles["LandingPage-Section3-Content-Container"]}>
                             <div className={styles["LandingPage-Section3-Content-Container-Row1"]}>
                                 <div className={styles["LandingPage-Section3-Content-Container-Row1-Row"]}>
                                     <div className={styles["LandingPage-Section3-Content-Container-Row1-Img-Wrapper"]}>
