@@ -24,8 +24,8 @@ class FaqSection1 extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick = () => {
-        console.log("masuks");
+    handleClick = (event) => {
+        console.log(event);
     };
 
     render() {
@@ -41,16 +41,18 @@ class FaqSection1 extends Component {
                                 <Accordion defaultActiveKey="11">
                                     <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
                                         <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="0">
-                                                <Row>
-                                                    <Col sm={11} xs={11}>
-                                                        Apa itu Big Sight?
-                                                    </Col>
-                                                    <Col sm={1} xs={1}>
-                                                        <FontAwesomeIcon icon={faPlus} />
-                                                    </Col>
-                                                </Row>
-                                            </CustomToggle>
+                                            <div onClick={this.handleClick} name="maman">
+                                                <CustomToggle eventKey="0">
+                                                    <Row>
+                                                        <Col sm={11} xs={11}>
+                                                            Apa itu Big Sight?
+                                                        </Col>
+                                                        <Col sm={1} xs={1}>
+                                                            <FontAwesomeIcon icon={faPlus} />
+                                                        </Col>
+                                                    </Row>
+                                                </CustomToggle>
+                                            </div>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="0">
                                             <Card.Body>
