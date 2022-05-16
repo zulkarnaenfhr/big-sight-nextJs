@@ -8,6 +8,7 @@ import AboutUsSection1 from "../../containers/AboutUs/AboutUs-Section1/AboutUs-S
 import AboutUsSection2 from "../../containers/AboutUs/AboutUs-Section2/AboutUs-Section2";
 import AboutUsSection3 from "../../containers/AboutUs/AboutUs-Section3/AboutUs-Section3";
 import AboutUsSection4 from "../../containers/AboutUs/AboutUs-Section4/AboutUs-Section4";
+import AboutUsSection5 from "../../containers/AboutUs/AboutUs-Section5/AboutUs-Section5";
 
 export default function AboutUs() {
     return (
@@ -25,6 +26,7 @@ export default function AboutUs() {
                 <AboutUsSection2 />
                 <AboutUsSection3 />
                 <AboutUsSection4 />
+                <AboutUsSection5 />
                 <BeforeFooter />
                 <FooterBigSight />
             </div>
