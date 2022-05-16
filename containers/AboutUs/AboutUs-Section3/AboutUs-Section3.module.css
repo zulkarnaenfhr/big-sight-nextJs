@@ -34,3 +34,10 @@
     color: #ffffff;
     width: 222px;
 }
+
+.AboutUs-Section3-Column-Container{
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+}

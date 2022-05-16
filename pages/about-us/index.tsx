@@ -23,10 +23,10 @@ export default function AboutUs() {
             </div>
             <div className={"Content-Container"}>
                 <AboutUsSection1 />
-                <AboutUsSection2 />
+                {/* <AboutUsSection2 /> */}
                 <AboutUsSection3 />
-                <AboutUsSection4 />
-                <AboutUsSection5 />
+                {/* <AboutUsSection4 />
+                <AboutUsSection5 /> */}
                 <BeforeFooter />
                 <FooterBigSight />
             </div>
