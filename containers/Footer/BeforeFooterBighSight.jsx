@@ -12,8 +12,10 @@ export default function BeforeFooter() {
                     <Col md={4}>
                         <Row>
                             <Col md={12}>
-                                <div className={styles["BeforeFooter-Logo"]}>
-                                    <Image src={require("../../src/Big-Sight/LogoBigSight.png")} />
+                                <div className={styles["BeforeFooter-Left-Row1"]}>
+                                    <div className={styles["BeforeFooter-Logo"]}>
+                                        <Image src={require("../../src/Big-Sight/LogoBigSight.png")} />
+                                    </div>
                                 </div>
                             </Col>
                             <Col md={12}>
