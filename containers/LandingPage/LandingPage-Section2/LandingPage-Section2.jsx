@@ -4,6 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./LandingPage-Section2.module.css";
+import news1 from "../../../src/Big-Sight/LandingPage/news/news1.png";
+import news2 from "../../../src/Big-Sight/LandingPage/news/news2.png";
+import Image from "next/image";
 
 export default function LandingPageSection1() {
   const settings = {
@@ -12,7 +15,7 @@ export default function LandingPageSection1() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     dotsClass: styles["button__bar"],
     arrows: false,
@@ -55,11 +58,7 @@ export default function LandingPageSection1() {
               <Slider {...settings}>
                 <div>
                   <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                    <Card.Img
-                      variant="top"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                      height={250}
-                    />
+                    <Image src={news1} alt={"berita 1"} />
                     <Card.Body
                       className={styles["LandingPage-Section2-Right-Card-Body"]}
                     >
@@ -68,7 +67,7 @@ export default function LandingPageSection1() {
                           styles["LandingPage-Section2-Right-Card-Title"]
                         }
                       >
-                        #BIGSIGHTUPDATE
+                        Penghargaan Innovation Awards
                       </Card.Title>
                       <Card.Text
                         className={
@@ -90,11 +89,8 @@ export default function LandingPageSection1() {
                 </div>
                 <div>
                   <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                    <Card.Img
-                      variant="top"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                      height={250}
-                    />
+                    <Image src={news2} alt={"berita 2"} />
+
                     <Card.Body
                       className={styles["LandingPage-Section2-Right-Card-Body"]}
                     >
@@ -103,7 +99,8 @@ export default function LandingPageSection1() {
                           styles["LandingPage-Section2-Right-Card-Title"]
                         }
                       >
-                        #BIGSIGHTUPDATE
+                        Kesepakatan implementasi Legal Analytics dengan
+                        Kementerian Sektretariat Negara
                       </Card.Title>
                       <Card.Text
                         className={
@@ -125,11 +122,7 @@ export default function LandingPageSection1() {
                 </div>
                 <div>
                   <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                    <Card.Img
-                      variant="top"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                      height={250}
-                    />
+                    <Image src={news1} alt={"berita 1"} />
                     <Card.Body
                       className={styles["LandingPage-Section2-Right-Card-Body"]}
                     >
@@ -138,7 +131,7 @@ export default function LandingPageSection1() {
                           styles["LandingPage-Section2-Right-Card-Title"]
                         }
                       >
-                        #BIGSIGHTUPDATE
+                        Penghargaan Innovation Awards
                       </Card.Title>
                       <Card.Text
                         className={
@@ -160,11 +153,8 @@ export default function LandingPageSection1() {
                 </div>
                 <div>
                   <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                    <Card.Img
-                      variant="top"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                      height={250}
-                    />
+                    <Image src={news2} alt={"berita 2"} />
+
                     <Card.Body
                       className={styles["LandingPage-Section2-Right-Card-Body"]}
                     >
@@ -173,7 +163,8 @@ export default function LandingPageSection1() {
                           styles["LandingPage-Section2-Right-Card-Title"]
                         }
                       >
-                        #BIGSIGHTUPDATE
+                        Kesepakatan implementasi Legal Analytics dengan
+                        Kementerian Sektretariat Negara
                       </Card.Title>
                       <Card.Text
                         className={
@@ -195,11 +186,7 @@ export default function LandingPageSection1() {
                 </div>
                 <div>
                   <Card className={styles["LandingPage-Section2-Right-Card"]}>
-                    <Card.Img
-                      variant="top"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98bPcGSS7686n0UAytB9AE1TXuRarFOPtZg&usqp=CAU"
-                      height={250}
-                    />
+                    <Image src={news1} alt={"berita 1"} />
                     <Card.Body
                       className={styles["LandingPage-Section2-Right-Card-Body"]}
                     >
@@ -208,7 +195,40 @@ export default function LandingPageSection1() {
                           styles["LandingPage-Section2-Right-Card-Title"]
                         }
                       >
-                        #BIGSIGHTUPDATE
+                        Penghargaan Innovation Awards
+                      </Card.Title>
+                      <Card.Text
+                        className={
+                          styles["LandingPage-Section2-Right-Card-Text"]
+                        }
+                      >
+                        Melalui BIG SIGHT Telkom Indonesia mengembangkan solusi
+                        digital logistik dengan mendigitalisasi proses supply
+                        chain secara end-to-end melalui pemanfaatan teknologi
+                        terkini.
+                      </Card.Text>
+                    </Card.Body>
+                    <Card.Footer
+                      className={
+                        styles["LandingPage-Section2-Right-Card-Footer"]
+                      }
+                    />
+                  </Card>
+                </div>
+                <div>
+                  <Card className={styles["LandingPage-Section2-Right-Card"]}>
+                    <Image src={news2} alt={"berita 2"} />
+
+                    <Card.Body
+                      className={styles["LandingPage-Section2-Right-Card-Body"]}
+                    >
+                      <Card.Title
+                        className={
+                          styles["LandingPage-Section2-Right-Card-Title"]
+                        }
+                      >
+                        Kesepakatan implementasi Legal Analytics dengan
+                        Kementerian Sektretariat Negara
                       </Card.Title>
                       <Card.Text
                         className={
