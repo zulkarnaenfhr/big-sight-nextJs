@@ -1,0 +1,44 @@
+#AboutUs-Section4 {
+    min-height: 807px;
+    display: flex;
+    justify-content: center;
+}
+
+.AboutUs-Section4-Title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+    text-align: center;
+    color: #484848;
+}
+
+.AboutUs-Section4-Content-Container {
+    padding-top: 96px;
+    width: 100%;
+    max-width: 1266px;
+    max-height: 569px;
+    border: 1px solid red;
+}
+
+.AboutUs-Section4-ImageWrapper {
+    width: 100%;
+    max-width: 620px;
+    max-height: 300px;
+}
+
+.AboutUs-Section4-Desc {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #484848;
+    margin-top: 39px;
+}
+
+.AboutUs-Section4-Row-Container {
+    padding-top: 67px;
+}
