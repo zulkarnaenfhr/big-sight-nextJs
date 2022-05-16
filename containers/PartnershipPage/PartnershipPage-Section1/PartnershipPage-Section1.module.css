@@ -1,91 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 #PartnershipPage-Section1 {
-    background-color: #C4C4C4;
-    height: 100%;
-    background-image: url("../../../src/Big-Sight/Partnership/background.png");
-    background-position: center;
-    background-size: cover;
-}
-
-.PartnershipPage-Section1-content-container {
-    position: relative;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    min-height: 420px;
+    background-color: #C4C4C4;
+    min-height: 425px;
+    width: 100%;
+    background-image: linear-gradient(to right, #002145, #ee2e24);
 }
 
-.logo-bigsight {
-    object-fit: contain;
-    width: 25%!important;
-    position: relative !important;
+.PartnershipPage-Section-Container {
+    display: flex;
+    width: 100%;
+}
+
+.PartnershipPage-Section-Container-left,
+.PartnershipPage-Section-Container-right {
+    width: 50%;
     margin: auto 0;
-}
-
-.PartnershipPage-Section1-content {
     text-align: center;
-    width: auto;
-    height: 45%;
-    padding-bottom: 80px;
 }
 
-.PartnershipPage-Section1-content-tittle {
-    color: red;
-    font-weight: 700;
+.PartnershipPage-Section-Container-content-title {
     font-size: 48px;
-    margin-bottom: 26px;
+    font-weight: 700;
+    color: white;
 }
 
-.PartnershipPage-Section1-content-text {
-    font-size: 21px;
-    font-weight: 800;
-    width: 60%;
-    margin: 0 auto;
-    letter-spacing: 4px;
-    color: #333333;
-}
-
-
-/* Resolusi Device Phone */
-
-@media (min-width: 200px) and (max-width:420px) {
-    .logo-bigsight {
-        width: 75%!important;
+@media (max-width: 695px) {
+    .PartnershipPage-Section-Container-right {
+        display: none;
     }
-    .PartnershipPage-Section1-content {
-        padding-bottom: 60px;
-    }
-    .PartnershipPage-Section1-content-tittle {
-        font-size: 32px;
-        margin-bottom: 26px;
-    }
-    .PartnershipPage-Section1-content-text {
-        font-size: 16px;
+    .PartnershipPage-Section-Container-left {
         width: 100%;
-        margin: unset;
-        padding: 0 30px;
-    }
-}
-
-
-/* Resolusi Device Phone */
-
-@media (min-width: 540px) and (max-width:912px) {
-    .logo-bigsight {
-        width: 50%!important;
-    }
-    .PartnershipPage-Section1-content {
-        padding-bottom: 60px;
-    }
-    .PartnershipPage-Section1-content-tittle {
-        font-size: 38px;
-        margin-bottom: 26px;
-    }
-    .PartnershipPage-Section1-content-text {
-        font-size: 18px;
-        width: 80%;
-        margin: 0 auto;
-        padding: unset;
     }
 }
