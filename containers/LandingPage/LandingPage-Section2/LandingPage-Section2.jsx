@@ -4,12 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./LandingPage-Section2.module.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faArrowLeftLong,
-//   faArrowRightLong,
-// } from "@fortawesome/free-solid-svg-icons";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function LandingPageSection1() {
   const settings = {
     dots: true,
@@ -17,7 +14,7 @@ export default function LandingPageSection1() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     dotsClass: styles["button__bar"],
     arrows: false,
@@ -31,7 +28,7 @@ export default function LandingPageSection1() {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -39,6 +36,15 @@ export default function LandingPageSection1() {
       },
     ],
   };
+
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      delay: 50,
+    });
+  });
   return (
     <div id={styles["LandingPage-Section2"]}>
       <Container fluid className="h-100">
