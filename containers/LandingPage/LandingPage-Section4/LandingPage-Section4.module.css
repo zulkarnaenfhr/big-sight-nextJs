@@ -1,5 +1,5 @@
 #LandingPage-Section4 {
-    height: 816px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
 .LandingPage-Section4-Video-Container {
     position: relative;
     width: 1016px;
-    height: 600px;
+    max-height: 600px;
 }
 
 .LandingPage-Section4-Aspect-Ratio {
