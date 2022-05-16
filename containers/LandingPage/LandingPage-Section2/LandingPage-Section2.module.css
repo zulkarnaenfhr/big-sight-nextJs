@@ -20,11 +20,12 @@
 }
 
 .LandingPage-Section2-Right-Card {
-    width: 400px;
+    width: auto;
     background-color: rgba(242, 244, 248, 1);
     border: unset;
     border-radius: unset;
     float: right;
+    margin: 0 10px;
 }
 
 .LandingPage-Section2-Right-Card-Body {
@@ -91,71 +92,31 @@
     margin: auto;
 }
 
-@media (min-width: 200px) and (max-width: 912px) {
-    #LandingPage-Section2 {
-        /* width: 100%; */
-        padding: 60px 20px;
-        /* position: relative; */
-        /* border: 1px solid red; */
-        /* padding: 60px 47px; */
-    }
-    .LandingPage-Section2-Right-Card {
-        float: unset;
-        margin: 0 auto;
+@media (min-width: 200px) and (max-width: 992px) {
+    .LandingPage-Section2-Left-content-container h2 {
+        /* text-align: center; */
+        margin-bottom: 20px;
     }
     .LandingPage-Section2-Left-content-Title {
         margin-bottom: 40px;
     }
     .button__bar {
-        /* display: block; */
         margin-top: 50px;
-        /* padding: 0; */
-        /* background: rgba(255, 255, 255, 0.3); */
-        /* border-radius: 40px; */
-        /* width: auto; */
         float: unset;
-        /* text-align: center; */
     }
 }
 
-@media (width:1280px) {
-    .LandingPage-Section2-Right-Card {
-        width: 370px;
+@media (max-width: 992px) {
+    #LandingPage-Section2 {
+        padding: 60px 20px;
     }
 }
 
-@media (width:1024px) {
+@media (max-width: 640px) {
     .LandingPage-Section2-Right-Card {
-        width: 280px;
-    }
-}
-
-@media (width:820px) {
-    .LandingPage-Section2-Right-Card {
-        width: 350px;
-    }
-}
-
-@media (width:768px) {
-    .LandingPage-Section2-Right-Card {
-        width: 330px;
-    }
-}
-
-@media (min-width:200px) and (max-width:540px) {
-    .LandingPage-Section2-Right-Card {
-        width: 315px;
-    }
-}
-
-@media (width:360px) {
-    .LandingPage-Section2-Right-Card {
-        width: 295px;
-    }
-}
-
-@media (width:412px) {
-    .LandingPage-Section2-Right-Card {
-        width: 348px;
+        float: unset;
+        max-width: 420px;
+        margin: unset;
+        margin: 0 auto;
     }
 }

@@ -17,7 +17,7 @@ export default function LandingPageSection1() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     dotsClass: styles["button__bar"],
     arrows: false,
@@ -31,7 +31,7 @@ export default function LandingPageSection1() {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
