@@ -2,8 +2,8 @@
     width: 100%;
     height: auto;
     position: relative;
-    border: 1px solid red;
     padding: 60px 47px;
+    background-color: white;
 }
 
 .LandingPage-Section2-Left {
@@ -46,9 +46,8 @@
     width: 85%;
     height: 25px;
     margin: 0 auto;
-    background-color: #EE2E24;
+    background-color: #ee2e24;
 }
-
 
 /* costume dots */
 
@@ -73,7 +72,7 @@
 
 .button__bar li button {
     border: none;
-    background: #EAEAEA;
+    background: #eaeaea;
     color: transparent;
     cursor: pointer;
     display: block;
@@ -83,7 +82,7 @@
 }
 
 .button__bar :global(li.slick-active) button {
-    background-color: #EE2E24;
+    background-color: #ee2e24;
 }
 
 .slick-slide img {
