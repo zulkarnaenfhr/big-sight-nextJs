@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 #PartnershipPage-Section1 {
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     height: 100%;
     background-image: url("../../../src/Big-Sight/Partnership/background.png");
     background-position: center;
@@ -18,7 +18,7 @@
 
 .logo-bigsight {
     object-fit: contain;
-    width: 25%!important;
+    width: 25% !important;
     position: relative !important;
     margin: auto 0;
 }
@@ -46,12 +46,11 @@
     color: #333333;
 }
 
-
 /* Resolusi Device Phone */
 
-@media (min-width: 200px) and (max-width:420px) {
+@media (min-width: 200px) and (max-width: 420px) {
     .logo-bigsight {
-        width: 75%!important;
+        width: 75% !important;
     }
     .PartnershipPage-Section1-content {
         padding-bottom: 60px;
@@ -68,12 +67,11 @@
     }
 }
 
-
 /* Resolusi Device Phone */
 
-@media (min-width: 540px) and (max-width:912px) {
+@media (min-width: 540px) and (max-width: 912px) {
     .logo-bigsight {
-        width: 50%!important;
+        width: 50% !important;
     }
     .PartnershipPage-Section1-content {
         padding-bottom: 60px;
