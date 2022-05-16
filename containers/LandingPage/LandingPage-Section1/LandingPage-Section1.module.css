@@ -20,7 +20,8 @@
 .LandingPage-Section1-Left-Desc {
     width: 100%;
     max-width: 290px;
-    font-family: poppins-500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 22px;
     line-height: 100%;
     text-transform: capitalize;
@@ -29,7 +30,8 @@
 .LandingPage-Section1-Left-Title {
     width: 100%;
     max-width: 510px;
-    font-family: poppins-700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 48px;
     line-height: 134%;
     margin-top: 25px;
@@ -44,6 +46,7 @@
     width: 100%;
     height: 100%;
 }
+
 
 /* .LandingPage-Section1-Right-Column-Position {
 } */
@@ -92,6 +95,7 @@
         padding-left: 3%;
     }
 }
+
 @media screen and (max-width: 768px) {
     #LandingPage-Section1 {
         display: flex;
