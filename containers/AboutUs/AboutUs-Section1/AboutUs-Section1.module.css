@@ -4,3 +4,13 @@
     max-height: 422px;
     background: linear-gradient(95.33deg, #002145 18.24%, #ee2e24 125.82%);
 }
+
+.AboutUs-Section1-Content-Container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.AboutUs-Section1-Title{
+    
+}

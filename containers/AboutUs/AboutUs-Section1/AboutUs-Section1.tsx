@@ -5,7 +5,7 @@ export default function AboutUsSection1() {
     return (
         <div id={styles["AboutUs-Section1"]}>
             <div className={styles["AboutUs-Section1-Content-Container"]}>
-                <h1>masuk</h1>
+                <h1 className={styles["AboutUs-Section1-Title"]}>masuk</h1>
             </div>
         </div>
     );
