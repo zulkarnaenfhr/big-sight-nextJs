@@ -5,13 +5,21 @@ export default function PartnershipPageSection3() {
     <div id={styles["PartnershipPage-Section3"]}>
       <h1
         className={styles["PartnershipPage-Section3-title"]}
+        data-aos="fade-down"
+        data-aos-delay="0"
       >{`Let's Try Our PRODUCT`}</h1>
-      <h2 className={styles["PartnershipPage-Section3-desc"]}>
+      <h2
+        className={styles["PartnershipPage-Section3-desc"]}
+        data-aos="fade-down"
+        data-aos-delay="300"
+      >
         Discover how our products are implemented in real world situations and
         used in various use case through our interactive demo app.
       </h2>
       <LandingPageSection1Button
         className={styles["PartnershipPage-Section3-button"]}
+        data-aos="fade-down"
+        data-aos-delay="500"
       >
         {" "}
         About Us{" "}

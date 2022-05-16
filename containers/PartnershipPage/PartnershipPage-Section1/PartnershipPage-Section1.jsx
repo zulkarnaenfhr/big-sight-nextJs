@@ -6,7 +6,11 @@ export default function PartnershipPageSection1() {
   return (
     <div id={styles["PartnershipPage-Section1"]}>
       <div className={styles["PartnershipPage-Section-Container"]}>
-        <div className={styles["PartnershipPage-Section-Container-left"]}>
+        <div
+          className={styles["PartnershipPage-Section-Container-left"]}
+          data-aos="fade-right"
+          data-aos-delay="0"
+        >
           <h1
             className={
               styles["PartnershipPage-Section-Container-content-title"]
@@ -15,7 +19,11 @@ export default function PartnershipPageSection1() {
             Partnership
           </h1>
         </div>
-        <div className={styles["PartnershipPage-Section-Container-right"]}>
+        <div
+          className={styles["PartnershipPage-Section-Container-right"]}
+          data-aos="fade-left"
+          data-aos-delay="0"
+        >
           <Image
             src={LogoBigSight}
             className={styles["PartnershipPage-Section-Container-content-img"]}
