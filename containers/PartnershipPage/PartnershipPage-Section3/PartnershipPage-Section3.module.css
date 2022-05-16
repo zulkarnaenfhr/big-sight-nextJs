@@ -1,0 +1,60 @@
+#PartnershipPage-Section3 {
+    width: 100%;
+    color: white;
+    background-color: #002145;
+    min-height: 338px;
+    text-align: center;
+    padding: 61px 0;
+}
+
+.PartnershipPage-Section3-title {
+    font-family: 'Poopins', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.PartnershipPage-Section3-desc {
+    font-family: 'Poopins', sans-serif;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.PartnershipPage-Section3-button {
+    margin-top: unset;
+    margin-top: 37px;
+}
+
+@media (max-width: 912px) {
+    .PartnershipPage-Section3-desc {
+        /* font-family: 'Poopins', sans-serif; */
+        width: 80%;
+        /* margin: 0 auto; */
+        /* font-size: 17px; */
+        /* letter-spacing: 2px; */
+    }
+}
+
+@media (max-width: 556px) {
+    .PartnershipPage-Section3-title {
+        font-family: 'Poopins', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .PartnershipPage-Section3-desc {
+        /* font-family: 'Poopins', sans-serif; */
+        width: 90%;
+        /* margin: 0 auto; */
+        font-size: 16px;
+        /* letter-spacing: 2px; */
+    }
+    .PartnershipPage-Section3-button {
+        margin-top: unset;
+        margin-top: 42px;
+    }
+}
