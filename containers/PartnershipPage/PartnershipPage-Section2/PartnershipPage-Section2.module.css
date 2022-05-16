@@ -12,7 +12,7 @@
 }
 
 .PartnershipPage-Section2-content-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 30px;
     color: #484848;
     font-weight: bold;
@@ -21,7 +21,7 @@
 }
 
 .PartnershipPage-Section2-content-description {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 45%;
     height: 20%;
     font-size: 17px;
@@ -41,7 +41,7 @@
     flex-direction: column;
     align-items: center;
     align-self: center;
-    border: 3px solid #EE2E24;
+    border: 3px solid #ee2e24;
     height: 400px;
     padding: 50px 30px;
     border-radius: 5px;
@@ -55,7 +55,7 @@
 }
 
 .PartnershipPage-Section2-partnership-content-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     font-weight: bold;
     height: 20%;
@@ -64,13 +64,12 @@
 }
 
 .PartnershipPage-Section2-partnership-content-desc {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     height: 30%;
     width: 100%;
     margin-top: 20px;
 }
-
 
 /* resolusi > 200px*/
 
@@ -104,10 +103,9 @@
     }
 }
 
-
 /* resolusi 280px */
 
-@media (width:280px) {
+@media (width: 280px) {
     .PartnershipPage-Section2-container-partnership {
         width: 100%;
         padding: 0 15px;
@@ -120,7 +118,6 @@
         margin-bottom: 25px;
     }
 }
-
 
 /* resolusi > 540px */
 
@@ -140,7 +137,6 @@
         margin: 15px auto;
     }
 }
-
 
 /* resolusi > 912px */
 
@@ -163,7 +159,6 @@
         margin: 15px auto;
     }
 }
-
 
 /* resolusi > 1024px */
 

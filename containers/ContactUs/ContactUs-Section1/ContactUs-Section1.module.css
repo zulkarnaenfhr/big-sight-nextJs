@@ -49,7 +49,7 @@
 }
 
 .ContactUs-Section1-Left-Title {
-    font-family: 'Nunitos', sans-serif;
+    font-family: "Nunitos", sans-serif;
     font-weight: 700;
     font-size: 35px;
     line-height: 52px;
@@ -60,7 +60,7 @@
 }
 
 .ContactUs-Section1-Left-Desc {
-    font-family: 'Nunitos', sans-serif;
+    font-family: "Nunitos", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -87,7 +87,7 @@
 }
 
 .ContactUs-Section1-Right-Label {
-    font-family: 'Nunitos', sans-serif;
+    font-family: "Nunitos", sans-serif;
     font-weight: 500;
     font-size: 17px;
     color: #000000;
@@ -116,7 +116,7 @@
 }
 
 .ContactUs-Section1-Right-Label-RadioGroup {
-    font-family: 'Nunitos', sans-serif;
+    font-family: "Nunitos", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 26px;
@@ -141,7 +141,7 @@
 }
 
 .ContactUs-Section1-RadioButton-Container-ProductName {
-    font-family: 'Nunitos', sans-serif;
+    font-family: "Nunitos", sans-serif;
     font-weight: 500;
     font-size: 17px;
     display: flex;
@@ -151,7 +151,6 @@
     margin-top: -2px;
 }
 
-
 /* Hide the browser's default radio button */
 
 .ContactUs-Section1-RadioButton-Container input {
@@ -159,7 +158,6 @@
     opacity: 0;
     cursor: pointer;
 }
-
 
 /* Create a custom radio button */
 
@@ -176,19 +174,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: transparent;
 }
-
 
 /* On mouse-over, add a grey background color */
 
-.ContactUs-Section1-RadioButton-Container:hover input~.checkmark {
+.ContactUs-Section1-RadioButton-Container:hover input ~ .checkmark {
     background-color: transparent;
 }
 
-
 /* When the radio button is checked, add a blue background */
 
-.ContactUs-Section1-RadioButton-Container input:checked~.checkmark {
+.ContactUs-Section1-RadioButton-Container input:checked ~ .checkmark {
     background-color: #ee2e24;
     border: 1px solid #ee2e24;
     color: white;
@@ -207,7 +204,7 @@
     background: #ee2e24;
     border: 1px solid #ee2e24;
     border-radius: 5px;
-    font-family: 'Nunitos', sans-serif;
+    font-family: "Nunitos", sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #ffffff;
