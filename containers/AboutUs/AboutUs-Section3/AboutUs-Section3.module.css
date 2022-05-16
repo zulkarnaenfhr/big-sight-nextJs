@@ -1,0 +1,36 @@
+#AboutUs-Section3 {
+    width: 100vw;
+    height: 400px;
+    background: #002145;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AboutUs-Section3-Column-Container {
+    justify-content: center;
+    display: flex;
+}
+
+.AboutUs-Section3-Column-Year {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    /* identical to box height, or 30px */
+    color: #ffffff;
+    text-align: center;
+}
+
+.AboutUs-Section3-Column-Desc {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    width: 222px;
+}

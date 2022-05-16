@@ -6,6 +6,7 @@ import FooterBigSight from "../../containers/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AboutUsSection1 from "../../containers/AboutUs/AboutUs-Section1/AboutUs-Section1";
 import AboutUsSection2 from "../../containers/AboutUs/AboutUs-Section2/AboutUs-Section2";
+import AboutUsSection3 from "../../containers/AboutUs/AboutUs-Section3/AboutUs-Section3";
 
 export default function AboutUs() {
     return (
@@ -21,6 +22,7 @@ export default function AboutUs() {
             <div className={"Content-Container"}>
                 <AboutUsSection1 />
                 <AboutUsSection2 />
+                <AboutUsSection3 />
                 <BeforeFooter />
                 <FooterBigSight />
             </div>
