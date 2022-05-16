@@ -1,7 +1,8 @@
 #AboutUs-Section5 {
     width: 100vw;
-    height: 400px;
+    min-height: 400px;
     background-color: #002145;
+    padding-bottom: 40px;
 }
 
 .AboutUs-Section5-Title {
@@ -59,6 +60,15 @@
     color: #ffffff;
 }
 
-.AboutUs-Section5-Row-Column {
+.AboutUs-Section5-Column-Container {
     padding-top: 60px;
+}
+
+@media screen and (max-width: 556px) {
+    .AboutUs-Section5-Title {
+        font-size: calc(0.8 * 50px);
+    }
+    .AboutUs-Section5-Column-Container{
+        padding-top: 40px;
+    }
 }

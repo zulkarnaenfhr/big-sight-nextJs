@@ -25,8 +25,8 @@ export default function AboutUs() {
                 <AboutUsSection1 />
                 {/* <AboutUsSection2 /> */}
                 <AboutUsSection3 />
-                {/* <AboutUsSection4 />
-                <AboutUsSection5 /> */}
+                <AboutUsSection4 />
+                <AboutUsSection5 />
                 <BeforeFooter />
                 <FooterBigSight />
             </div>

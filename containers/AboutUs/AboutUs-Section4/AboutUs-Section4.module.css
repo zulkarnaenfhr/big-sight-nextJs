@@ -1,7 +1,9 @@
 #AboutUs-Section4 {
+    height: fit-content;
     min-height: 807px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .AboutUs-Section4-Title {
@@ -15,11 +17,15 @@
 }
 
 .AboutUs-Section4-Content-Container {
-    padding-top: 96px;
     width: 100%;
     max-width: 1266px;
-    max-height: 569px;
+    min-height: 569px;
     border: 1px solid red;
+    padding-top: 96px;
+}
+
+.AboutUs-Section4-ColumnContainer {
+    padding-top: 67px;
 }
 
 .AboutUs-Section4-ImageWrapper {
@@ -39,6 +45,14 @@
     margin-top: 39px;
 }
 
-.AboutUs-Section4-Row-Container {
-    padding-top: 67px;
+@media screen and (max-width: 992px) {
+    #AboutUs-Section4 {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .AboutUs-Section4-ImageContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
