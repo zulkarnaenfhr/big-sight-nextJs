@@ -1,21 +1,27 @@
-import LogoBigSight from "../../../src/Big-Sight/LogoBigSight.png";
-import Image from "next/image";
+import LogoBigSight from "../../../src/Big-Sight/LogoBigSight-white.png";
 import styles from "../PartnershipPage-Section1/PartnershipPage-Section1.module.css";
+import Image from "next/image";
 
 export default function PartnershipPageSection1() {
   return (
     <div id={styles["PartnershipPage-Section1"]}>
-      <div className={styles["PartnershipPage-Section1-content-container"]}>
-        <div className={styles["logo-bigsight"]}>
-          <Image src={LogoBigSight} alt={"Logo-Big-Sight"} />
-        </div>
-        <div className={styles["PartnershipPage-Section1-content"]}>
-          <h1 className={styles["PartnershipPage-Section1-content-tittle"]}>
-            Partenership
+      <div className={styles["PartnershipPage-Section-Container"]}>
+        <div className={styles["PartnershipPage-Section-Container-left"]}>
+          <h1
+            className={
+              styles["PartnershipPage-Section-Container-content-title"]
+            }
+          >
+            Partnership
           </h1>
-          <h2 className={styles["PartnershipPage-Section1-content-text"]}>
-            A PLATFORM AIMED TO GROW THE AI ECOSYSTEM IN INDONESIA
-          </h2>
+        </div>
+        <div className={styles["PartnershipPage-Section-Container-right"]}>
+          <Image
+            src={LogoBigSight}
+            className={styles["PartnershipPage-Section-Container-content-img"]}
+            width={435}
+            height={150}
+          ></Image>
         </div>
       </div>
     </div>

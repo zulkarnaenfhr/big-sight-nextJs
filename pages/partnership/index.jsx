@@ -21,7 +21,7 @@ const Index = () => {
         <BigSightNavbar />
       </div>
       <div className={"Content-Container"}>
-        {/* <PartnershipPageSection1 /> */}
+        <PartnershipPageSection1 />
         <PartnershipPageSection2 />
         <PartnershipPageSection3 />
         <BeforeFooterBighSight />
