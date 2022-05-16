@@ -1,0 +1,114 @@
+#AboutUs-Section2 {
+    width: 1432px;
+    height: 1156px;
+}
+
+.AboutUs-Section2-Container {
+    padding-top: 71px;
+}
+
+.AboutUs-Section2-Title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+    text-align: justify;
+    text-transform: capitalize;
+    color: #484848;
+}
+
+.AboutUs-Section2-Left-Content-Container {
+    width: 100%;
+    max-width: 598px;
+}
+
+.AboutUs-Section2-Desc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 00;
+    font-size: 30px;
+    line-height: 137%;
+    /* or 41px */
+
+    text-align: justify;
+    text-transform: capitalize;
+
+    color: #484848;
+    padding-top: 40px;
+}
+
+.AboutUs-Section2-Left-Content-Row2 {
+    margin-top: 69px;
+}
+
+/* right content */
+.AboutUs-Section2-Left-Background {
+    width: 479px;
+    height: 886px;
+    background: #f2f4f8;
+    position: relative;
+}
+
+.AboutUs-Section2-Right-Content-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.AboutUs-Section2-Awan1-Container {
+    position: absolute;
+}
+
+.AboutUs-Section2-Awan1-Wrapper {
+    width: 293px;
+    height: 149px;
+    position: relative;
+    animation-name: HorizontalMovementAwan1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    top: 93px;
+}
+
+@keyframes HorizontalMovementAwan1 {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.AboutUs-Section2-Awan2-Container {
+    position: absolute;
+    right: 0;
+}
+
+.AboutUs-Section2-Awan2-Wrapper {
+    width: 202px;
+    height: 129px;
+    position: relative;
+    animation-name: HorizontalMovementAwan2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    top: 230px;
+}
+
+@keyframes HorizontalMovementAwan2 {
+    0% {
+        left: 1%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.AboutUs-Section2-Panah-Container {
+    position: absolute;
+    width: 636px;
+    height: 480px;
+    right: 0;
+    margin-top: 160px;
+}
