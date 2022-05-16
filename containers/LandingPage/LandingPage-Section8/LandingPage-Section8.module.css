@@ -14,7 +14,8 @@
 .LandingPage-Section8-Title {
     width: 501px;
     height: 70px;
-    font-family: poppins-700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 35px;
     line-height: 100%;
     text-transform: uppercase;
@@ -29,7 +30,8 @@
     background: #ee2e24;
     border-radius: 65px;
     border: 1px solid #ee2e24;
-    font-family: poppins-700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 17px;
     line-height: 140%;
     letter-spacing: 0.005em;

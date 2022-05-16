@@ -5,7 +5,8 @@
 }
 
 .LandingPage-Section6-Title {
-    font-family: poppins-700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 30px;
     line-height: 100%;
     text-align: center;
@@ -52,7 +53,8 @@
 }
 
 .LandingPage-Section6-Column-Content-Title {
-    font-family: poppins-700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 25px;
     line-height: 100%;
     /* identical to box height, or 25px */
@@ -70,7 +72,8 @@
 }
 
 .LandingPage-Section6-Column-Content-Desc {
-    font-family: poppins-400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 17px;
     line-height: 120%;
     text-align: center;

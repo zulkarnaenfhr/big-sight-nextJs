@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LandingPageSection1Button = styled.button`
+export const LandingPageSection1Button = styled.button `
     max-width: 321px;
     width: 100vw;
     height: 47px;
@@ -8,7 +8,7 @@ export const LandingPageSection1Button = styled.button`
     border-radius: 65px;
     border: 1px solid transparent;
     color: white;
-    font-family: poppins-700;
+    font-family: 'Poopins', sans-serif;
     font-size: 17px;
     line-height: 140%;
     letter-spacing: 0.5px;

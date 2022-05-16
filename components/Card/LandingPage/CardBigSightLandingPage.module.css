@@ -10,7 +10,8 @@
 }
 
 .CardBigSightLandingPage-Desc {
-    font-family: poppins-400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     text-align: justify;
     font-size: 12px;
     padding-left: 42px;

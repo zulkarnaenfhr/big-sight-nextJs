@@ -49,26 +49,24 @@
 }
 
 .ContactUs-Section1-Left-Title {
-    font-family: poppins-700;
+    font-family: 'Nunitos', sans-serif;
+    font-weight: 700;
     font-size: 35px;
     line-height: 52px;
     /* identical to box height */
-
     display: flex;
     align-items: center;
-
     color: #ffffff;
 }
 
 .ContactUs-Section1-Left-Desc {
-    font-family: poppins-400;
+    font-family: 'Nunitos', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     /* identical to box height */
-
     display: flex;
     align-items: center;
-
     color: #ffffff;
 }
 
@@ -89,7 +87,8 @@
 }
 
 .ContactUs-Section1-Right-Label {
-    font-family: poppins-500;
+    font-family: 'Nunitos', sans-serif;
+    font-weight: 500;
     font-size: 17px;
     color: #000000;
 }
@@ -117,7 +116,8 @@
 }
 
 .ContactUs-Section1-Right-Label-RadioGroup {
-    font-family: poppins-700;
+    font-family: 'Nunitos', sans-serif;
+    font-weight: 700;
     font-size: 17px;
     line-height: 26px;
     display: flex;
@@ -141,7 +141,8 @@
 }
 
 .ContactUs-Section1-RadioButton-Container-ProductName {
-    font-family: poppins-500;
+    font-family: 'Nunitos', sans-serif;
+    font-weight: 500;
     font-size: 17px;
     display: flex;
     align-items: center;
@@ -150,14 +151,18 @@
     margin-top: -2px;
 }
 
+
 /* Hide the browser's default radio button */
+
 .ContactUs-Section1-RadioButton-Container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
+
 /* Create a custom radio button */
+
 .checkmark {
     font-size: 13px;
     position: absolute;
@@ -173,13 +178,17 @@
     align-items: center;
 }
 
+
 /* On mouse-over, add a grey background color */
-.ContactUs-Section1-RadioButton-Container:hover input ~ .checkmark {
+
+.ContactUs-Section1-RadioButton-Container:hover input~.checkmark {
     background-color: transparent;
 }
 
+
 /* When the radio button is checked, add a blue background */
-.ContactUs-Section1-RadioButton-Container input:checked ~ .checkmark {
+
+.ContactUs-Section1-RadioButton-Container input:checked~.checkmark {
     background-color: #ee2e24;
     border: 1px solid #ee2e24;
     color: white;
@@ -198,7 +207,8 @@
     background: #ee2e24;
     border: 1px solid #ee2e24;
     border-radius: 5px;
-    font-family: poppins-700;
+    font-family: 'Nunitos', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     color: #ffffff;
 }
