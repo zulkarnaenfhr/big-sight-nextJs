@@ -8,7 +8,7 @@ export default function LandingPageSection4() {
                 <Row className={styles["LandingPage-Section4-Row-Container"]}>
                     <Col md={4}>
                         <h1 className={styles["LandingPage-Section4-Title"]} data-aos="fade-right">
-                            WHO <br /> WE ARE
+                            WHO WE ARE
                         </h1>
                     </Col>
                     <Col md={8}>

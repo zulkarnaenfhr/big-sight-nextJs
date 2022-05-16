@@ -19,7 +19,6 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 96px;
-    line-height: 100%;
     text-transform: capitalize;
     color: #35414b;
 }
@@ -44,4 +43,20 @@
     height: 100%;
     left: 0;
     top: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .LandingPage-Section4-Title {
+        font-size: calc(0.9 * 96px);
+    }
+}
+@media screen and (max-width: 768px) {
+    .LandingPage-Section4-Title {
+        width: 100%;
+        text-align: center;
+        font-size: calc(0.7 * 96px);
+    }
+    #LandingPage-Section4 {
+        min-height: 0px;
+    }
 }
