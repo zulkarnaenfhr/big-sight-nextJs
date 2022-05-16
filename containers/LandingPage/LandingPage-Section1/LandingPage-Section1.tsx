@@ -23,7 +23,7 @@ export default function LandingPageSection1() {
                                     href="#BigSightLandingPage-Section2"
                                 >
                                     <LandingPageSection1Button>
-                                        See Details{" "}
+                                        About Us{" "}
                                         <span className={styles["LandingPage-Section1-Button-Span-Arrow"]}>
                                             <FontAwesomeIcon icon={faAngleRight} />
                                         </span>
