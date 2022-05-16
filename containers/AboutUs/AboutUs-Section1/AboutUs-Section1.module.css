@@ -11,6 +11,17 @@
     align-items: center;
 }
 
-.AboutUs-Section1-Title{
-    
+.AboutUs-Section1-Title {
+    margin-left: 10%;
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 134%;
+    /* or 64px */
+
+    text-transform: capitalize;
+
+    color: #ffffff;
 }

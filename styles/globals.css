@@ -25,7 +25,6 @@ html {
     /* Optional: just make scrollbar invisible */
 }
 
-
 /* Optional: show position indicator in red */
 
 ::-webkit-scrollbar-thumb {
@@ -40,5 +39,5 @@ html {
 }
 
 .Content-Container {
-    margin-top: 103px;
+    margin-top: 94px;
 }
