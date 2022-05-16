@@ -7,7 +7,7 @@ export default function PartnershipPageSection1() {
     <div id={styles["PartnershipPage-Section1"]}>
       <div className={styles["PartnershipPage-Section1-content-container"]}>
         <div className={styles["logo-bigsight"]}>
-          <Image src={LogoBigSight} />
+          <Image src={LogoBigSight} alt={"Logo-Big-Sight"} />
         </div>
         <div className={styles["PartnershipPage-Section1-content"]}>
           <h1 className={styles["PartnershipPage-Section1-content-tittle"]}>
