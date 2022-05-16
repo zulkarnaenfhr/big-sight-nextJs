@@ -3,6 +3,7 @@ import styles from "./LandingPage-Section1.module.css";
 import { LandingPageSection1Button } from "../../../components/Button/LandingPage/ButtonLandingPage.styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function LandingPageSection1() {
     return (
@@ -30,9 +31,16 @@ export default function LandingPageSection1() {
                                 </a>
                             </div>
                         </div>
+                        <div className={styles["LandingPage-Section1-Right-Image-Left-Wrapper"]}>
+                            <Image src={require("../../../src/Big-Sight/LandingPage/Section1-Vector-Left.png")} />
+                        </div>
                     </Col>
-                    <Col col={7}>
-                        <h1>masuk</h1>
+                    <Col col={7} className={styles["LandingPage-Section1-Right-Column"]}>
+                        <div className={styles["LandingPage-Section1-Right-Column-Position"]}>
+                            <div className={styles["LandingPage-Section1-Right-Image-Wrapper"]}>
+                                <Image src={require("../../../src/Big-Sight/LandingPage/Section1-Vector.png")} />
+                            </div>
+                        </div>
                     </Col>
                 </Row>
             </Container>
