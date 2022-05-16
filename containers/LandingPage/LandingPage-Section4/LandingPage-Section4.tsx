@@ -7,12 +7,12 @@ export default function LandingPageSection4() {
             <Container>
                 <Row className={styles["LandingPage-Section4-Row-Container"]}>
                     <Col md={4}>
-                        <h1 className={styles["LandingPage-Section4-Title"]}>
+                        <h1 className={styles["LandingPage-Section4-Title"]} data-aos="fade-right">
                             WHO <br /> WE ARE
                         </h1>
                     </Col>
                     <Col md={8}>
-                        <div className={styles["LandingPage-Section4-Video-Container"]}>
+                        <div className={styles["LandingPage-Section4-Video-Container"]} data-aos="fade-left">
                             <div className={styles["LandingPage-Section4-Aspect-Ratio"]}>
                                 <iframe
                                     className={styles["LandingPage-Section4-Video"]}
