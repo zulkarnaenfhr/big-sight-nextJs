@@ -4,7 +4,6 @@ import PartnershipPageSection1 from "../../containers/PartnershipPage/Partnershi
 import PartnershipPageSection2 from "../../containers/PartnershipPage/PartnershipPage-Section2/PartnershipPage-Section2";
 import BeforeFooterBighSight from "../../containers/Footer/BeforeFooterBighSight";
 import FooterBigSight from "../../containers/Footer/Footer";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import PartnershipPageSection3 from "../../containers/PartnershipPage/PartnershipPage-Section3/PartnershipPage-Section3";
 
