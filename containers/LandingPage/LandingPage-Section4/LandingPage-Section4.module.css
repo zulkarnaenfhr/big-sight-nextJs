@@ -1,22 +1,41 @@
 #LandingPage-Section4 {
     height: fit-content;
+    min-height: 796px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
+    border-bottom: 11px solid #ee2e24;
+    border-top: 11px solid #ee2e24;
+}
+
+.LandingPage-Section4-Row-Container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.LandingPage-Section4-Title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #35414b;
 }
 
 .LandingPage-Section4-Video-Container {
     position: relative;
-    width: 1016px;
-    max-height: 600px;
+    max-width: 784px;
+    max-height: 464px;
 }
 
 .LandingPage-Section4-Aspect-Ratio {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56%; /* The height of the item will now be 56% of the width. */
+    /* The height of the item will now be 56% of the width. */
+    padding-bottom: 56%;
 }
 
 .LandingPage-Section4-Video {
