@@ -35,7 +35,7 @@ class LandingPageSection5 extends Component {
                                         productName={`Legal Analytics `}
                                         productDesc={`merupakan aplikasi berbasis Big data yang menghimpun seluruh peraturan perundang - undangan yang  tersistem secara  akurat, valid, dan up-to-date sehingga memudahkan para pengguna
                                 `}
-                                        linkProduct={`notSet`}
+                                        linkProduct={`https://legalanalytics.id/`}
                                     />
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ class LandingPageSection5 extends Component {
                                         height={"78px"}
                                         productName={`Picaso `}
                                         productDesc={`merupakan layanan Application Programming Interface yang membantu para Developer dan Perusahaan dalam mengimplementasikan teknologi Artificial Intelligence, melalui produk dan layanan Optical Character Recognition, Face Recognition, dan Object Detection`}
-                                        linkProduct={`notSet`}
+                                        linkProduct={`https://picaso.id/`}
                                     />
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ class LandingPageSection5 extends Component {
                                         productName={`Big Score `}
                                         productDesc={`merupakan API-as-a-service yang membantu klien dalam meminimalisir kegagalan kredit melalui hasil skoring dari profil calon nasabah.
 `}
-                                        linkProduct={`notset`}
+                                        linkProduct={`http://bigscore.id/`}
                                     />
                                 </div>
                             </div>
@@ -104,7 +104,7 @@ class LandingPageSection5 extends Component {
                                         height={"46px"}
                                         productName={`Big Box `}
                                         productDesc={`merupakan penyedia layanan yang dapat mewujudkan pengalaman pengguna yang lebih imersif melalui pengembangan konten Virtual Reality (VR) dan Augmented Reality (AR) sesuai kebutuhan industri`}
-                                        linkProduct={`notSet`}
+                                        linkProduct={`https://bigbox.co.id/`}
                                     />
                                 </div>
                             </div>
@@ -121,7 +121,7 @@ class LandingPageSection5 extends Component {
                                         height={"46px"}
                                         productName={`Smarteye.id `}
                                         productDesc={`merupakan platform Big Data End-to-End untuk membantu pengambilan keputusan sesuai dengan kebutuhan operasional dan bisnis perusahaan secara on premise, on hybrid, maupun on cloud`}
-                                        linkProduct={`notSet`}
+                                        linkProduct={`https://www.smarteye.id/`}
                                     />
                                 </div>
                             </div>
