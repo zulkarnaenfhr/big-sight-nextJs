@@ -37,6 +37,7 @@
 }
 
 .Faq-Section1-Accordian-Question-Button {
+    height: fit-content;
     min-height: 75px;
     width: 100%;
     background-color: transparent;
@@ -61,6 +62,7 @@
     padding-left: 2%;
     padding-right: 2%;
     color: #000000;
+    display: inline-block;
 }
 
 .Faq-Section1-Accordian-Indicator {
@@ -71,11 +73,44 @@
     transform: rotate(0deg);
 }
 
+.Faq-Section1-Accordian-Link {
+    color: #d34a4a;
+    cursor: pointer;
+    font-family: "Nunitos", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    animation: all 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.Faq-Section1-Accordian-Link:hover {
+    color: #ee2e24;
+}
+
 @media screen and (max-width: 992px) {
     .Faq-Section1-Content-Container {
         padding-top: 60px;
     }
     .Faq-Section1-Right-Column {
         padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Faq-Section1-Accordian-Question-Button {
+        font-size: calc(0.85 * 27px);
+    }
+    .Faq-Section1-Accordian-Answer {
+        font-size: calc(0.85 * 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Faq-Section1-Accordian-Question-Button {
+        font-size: calc(0.75 * 27px);
+        min-height: 40px;
+    }
+    .Faq-Section1-Accordian-Answer {
+        font-size: calc(0.75 * 20px);
     }
 }
