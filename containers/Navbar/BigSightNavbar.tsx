@@ -87,16 +87,10 @@ export default function BigSightNavbar() {
                                         <p className={styles["BigSightDropDown-Menu1"]}>About Us</p>{" "}
                                     </NavDropdown.Item>
                                 </Link>
-                                <Link href="/blog" passHref>
+                                <Link href="/update" passHref>
                                     <NavDropdown.Item className={styles["dropdown-item"]}>
                                         {" "}
-                                        <p className={styles["BigSightDropDown-Menu1"]}>Blog</p>{" "}
-                                    </NavDropdown.Item>
-                                </Link>{" "}
-                                <Link href="/press" passHref>
-                                    <NavDropdown.Item className={styles["dropdown-item"]}>
-                                        {" "}
-                                        <p className={styles["BigSightDropDown-Menu1"]}>Press</p>{" "}
+                                        <p className={styles["BigSightDropDown-Menu1"]}>Update</p>{" "}
                                     </NavDropdown.Item>
                                 </Link>{" "}
                             </NavDropdown>
