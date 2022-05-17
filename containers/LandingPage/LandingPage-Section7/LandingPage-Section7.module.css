@@ -6,7 +6,7 @@
 }
 
 .LandingPage-Section7-Title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
@@ -60,7 +60,7 @@
 }
 
 .LandingPage-Section7-Title2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
@@ -68,5 +68,5 @@
     text-transform: uppercase;
     padding-top: 78px;
     color: #323232;
-    margin-bottom: 73px;
+    padding-bottom: 73px;
 }

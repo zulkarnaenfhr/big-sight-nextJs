@@ -2,9 +2,6 @@
     width: 100vw;
     height: 400px;
     background: #002145;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .AboutUs-Section3-Column-Container {
@@ -35,8 +32,31 @@
     width: 222px;
 }
 
-.AboutUs-Section3-Column-Container{
-    padding-top: 30px;
+.AboutUs-Section3-Column-Container {
+    padding-top: 103px;
+}
+
+.AboutUs-Section3-Title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 60px;
+}
+
+.AboutUs-Section3-Desc {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 16px;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 992px) {

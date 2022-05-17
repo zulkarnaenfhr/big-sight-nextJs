@@ -19,13 +19,68 @@ class FaqSection1 extends Component {
         super(props);
 
         this.state = {
-            statusLoad: "",
+            faq1: false,
+            faq2: false,
+            faq3: false,
+            faq4: false,
+            faq5: false,
+            faq6: false,
+            faq7: false,
+            faq8: false,
+            statusFaq: "",
         };
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick = (event) => {
-        console.log(event);
+    handleClick = (e) => {
+        if (e.target.innerHTML === "Apa itu Big Sight?") {
+            this.setState({
+                statusFaq: "faq1",
+            });
+            console.log(this.state.statusFaq);
+        } else if (e.target.innerHTML === "Apa saja Produk dan Solusi dari BigSight?") {
+            this.setState({
+                statusFaq: "faq2",
+            });
+            //  className={this.state.faq2 === false ? "" : styles["Faq-Section1-Accordian-Indicator"]}
+            console.log(this.state.statusFaq);
+        } else if (e.target.innerHTML === "Bagaimana cara berlangganan atau bekerjasama dengan BigSight?") {
+            this.setState({
+                // faq3: !this.state.faq3,
+                statusFaq: "faq3",
+            });
+        } else if (e.target.innerHTML === "Berapa Harga untuk berlangganan?") {
+            this.setState({
+                statusFaq: "faq4",
+                // faq4: !this.state.faq4,
+            });
+        } else if (e.target.innerHTML === "Apa saja Produk dan Solusi dari BigSight?") {
+            this.setState({
+                statusFaq: "faq5",
+            });
+            //  className={this.state.faq2 === false ? "" : styles["Faq-Section1-Accordian-Indicator"]}
+            console.log(this.state.statusFaq);
+        } else if (e.target.innerHTML === "Apa Kelebihan dari produk dan solusi dari BigSight?") {
+            this.setState({
+                // faq3: !this.state.faq3,
+                statusFaq: "faq6",
+            });
+        } else if (e.target.innerHTML === "Bagaimana jenis arsitektur dalam mengimplementasikan Produk dan Solusi dari BigSight?") {
+            this.setState({
+                statusFaq: "faq7",
+                // faq4: !this.state.faq4,
+            });
+        } else if (e.target.innerHTML === "Apakah user dapat mengajukan kustomisasi produk atau layanan?") {
+            this.setState({
+                // faq3: !this.state.faq3,
+                statusFaq: "faq8",
+            });
+        } else if (e.target.innerHTML === "Apakah user dapat mencoba Produk dan Layanan dari BigSight melalui Demo atau Free Trial?") {
+            this.setState({
+                statusFaq: "faq9",
+                // faq4: !this.state.faq4,
+            });
+        }
     };
 
     render() {
@@ -39,167 +94,202 @@ class FaqSection1 extends Component {
                             </Col>
                             <Col className={styles["Faq-Section1-Right-Column"]} lg={9}>
                                 <Accordion defaultActiveKey="11">
-                                    <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
-                                        <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <div onClick={this.handleClick} name="maman">
-                                                <CustomToggle eventKey="0">
-                                                    <Row>
-                                                        <Col sm={11} xs={11}>
-                                                            Apa itu Big Sight?
-                                                        </Col>
-                                                        <Col sm={1} xs={1}>
-                                                            <FontAwesomeIcon icon={faPlus} />
-                                                        </Col>
-                                                    </Row>
-                                                </CustomToggle>
-                                            </div>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="0">
-                                            <Card.Body>
-                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Penyedia solusi big data analytic yang ditawarkan oleh Telkom Indonesia yang dapat digunakan untuk pemerintahan dan perusahaan.</p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
-                                        <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="1">
-                                                <Row>
-                                                    <Col sm={11} xs={11}>
-                                                        Apa saja Produk dan Solusi dari BigSight?
-                                                    </Col>
-                                                    <Col sm={1} xs={1}>
-                                                        <FontAwesomeIcon icon={faPlus} />
-                                                    </Col>
-                                                </Row>
-                                            </CustomToggle>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="1">
-                                            <Card.Body>
-                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight terdiri dari 6 Produk, untuk lebih lengkapnya bisa mengakses menu “Product”</p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
-                                        <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="2">
-                                                <Row>
-                                                    <Col sm={11} xs={11}>
-                                                        Bagaimana cara berlangganan atau bekerjasama dengan BigSight?{" "}
-                                                    </Col>
-                                                    <Col sm={1} xs={1}>
-                                                        <FontAwesomeIcon icon={faPlus} />
-                                                    </Col>
-                                                </Row>
-                                            </CustomToggle>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="2">
-                                            <Card.Body>
-                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Anda dapat menghubungi Customer Service kami di “Contact Us”</p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
-                                        <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="3">
-                                                <Row>
-                                                    <Col sm={11} xs={11}>
-                                                        Berapa Harga untuk berlangganan?
-                                                    </Col>
-                                                    <Col sm={1} xs={1}>
-                                                        <FontAwesomeIcon icon={faPlus} />
-                                                    </Col>
-                                                </Row>
-                                            </CustomToggle>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="3">
-                                            <Card.Body>
-                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Untuk Harga bisa menghubungi Customer Service kami atau datang ke Kantor kami di “Contact Us”</p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
-                                        <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="4">
-                                                <Row>
-                                                    <Col sm={11} xs={11}>
-                                                        Apa Kelebihan dari produk dan solusi dari BigSight?
-                                                    </Col>
-                                                    <Col sm={1} xs={1}>
-                                                        <FontAwesomeIcon icon={faPlus} />
-                                                    </Col>
-                                                </Row>
-                                            </CustomToggle>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="4">
-                                            <Card.Body>
-                                                <div className={styles["Faq-Section1-Accordian-Answer"]}>
-                                                    <ul>
-                                                        <li>Memberikan solusi untuk pengimplementasian sistem digitalisasi</li>
-                                                        <li>Menciptakan data - data yang saling terintegrasi</li>
-                                                        <li>Mempersingkat waktu dan biaya operasional</li>
-                                                        <li>Mudah untuk digunakan</li>
-                                                    </ul>
+                                    <div data-aos="fade-left">
+                                        <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
+                                            <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
+                                                <div onClick={this.handleClick}>
+                                                    <CustomToggle eventKey="0">
+                                                        <Row>
+                                                            <Col sm={11} xs={11}>
+                                                                Apa itu Big Sight?
+                                                            </Col>
+                                                            <Col sm={1} xs={1}>
+                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq1" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                            </Col>
+                                                        </Row>
+                                                    </CustomToggle>
                                                 </div>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
-                                        <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="5">
-                                                <Row>
-                                                    <Col sm={11} xs={11}>
-                                                        Bagaimana jenis arsitektur dalam mengimplementasikan Produk dan Solusi dari BigSight?
-                                                    </Col>
-                                                    <Col sm={1} xs={1}>
-                                                        <FontAwesomeIcon icon={faPlus} />
-                                                    </Col>
-                                                </Row>
-                                            </CustomToggle>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="5">
-                                            <Card.Body>
-                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight menyediakan arsitektur On Premise ataupun On Cloud, untuk informasi lebih lanjut bisa menghubungi di “Contact Us”</p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
-                                        <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="6">
-                                                <Row>
-                                                    <Col sm={11} xs={11}>
-                                                        Apakah user dapat mengajukan kustomisasi produk atau layanan?
-                                                    </Col>
-                                                    <Col sm={1} xs={1}>
-                                                        <FontAwesomeIcon icon={faPlus} />
-                                                    </Col>
-                                                </Row>
-                                            </CustomToggle>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="6">
-                                            <Card.Body>
-                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Ya</p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
-                                        <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
-                                            <CustomToggle eventKey="7">
-                                                <Row>
-                                                    <Col sm={11} xs={11}>
-                                                        Apakah user dapat mencoba Produk dan Layanan dari BigSight melalui Demo atau Free Trial?
-                                                    </Col>
-                                                    <Col sm={1} xs={1}>
-                                                        <FontAwesomeIcon icon={faPlus} />
-                                                    </Col>
-                                                </Row>{" "}
-                                            </CustomToggle>
-                                        </Card.Header>
-                                        <Accordion.Collapse eventKey="7">
-                                            <Card.Body>
-                                                <p className={styles["Faq-Section1-Accordian-Answer"]}>Ya, User dapat menghubungi Customer Service kami di “Contact Us” atau Customer Service Produk dan Layanan terkait.</p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="0">
+                                                <Card.Body>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>Penyedia solusi big data analytic yang ditawarkan oleh Telkom Indonesia yang dapat digunakan untuk pemerintahan dan perusahaan.</p>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    </div>
+
+                                    <div data-aos="fade-left" data-aos-delay="100">
+                                        <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
+                                            <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
+                                                <div onClick={this.handleClick}>
+                                                    <CustomToggle eventKey="1">
+                                                        <Row>
+                                                            <Col sm={11} xs={11}>
+                                                                Apa saja Produk dan Solusi dari BigSight?
+                                                            </Col>
+                                                            <Col sm={1} xs={1}>
+                                                                <FontAwesomeIcon icon={faPlus} className={this.state.statusFaq === "faq2" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} />
+                                                            </Col>
+                                                        </Row>
+                                                    </CustomToggle>
+                                                </div>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="1">
+                                                <Card.Body>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight terdiri dari 6 Produk, untuk lebih lengkapnya bisa mengakses menu “Product”</p>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    </div>
+
+                                    <div data-aos="fade-left" data-aos-delay="200">
+                                        <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
+                                            <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
+                                                <div onClick={this.handleClick}>
+                                                    <CustomToggle eventKey="2">
+                                                        <Row>
+                                                            <Col sm={11} xs={11}>
+                                                                Bagaimana cara berlangganan atau bekerjasama dengan BigSight?
+                                                            </Col>
+                                                            <Col sm={1} xs={1}>
+                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq3" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                            </Col>
+                                                        </Row>
+                                                    </CustomToggle>
+                                                </div>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="2">
+                                                <Card.Body>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>Anda dapat menghubungi Customer Service kami di “Contact Us”</p>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    </div>
+
+                                    <div data-aos="fade-left" data-aos-delay="300">
+                                        <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
+                                            <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
+                                                <div onClick={this.handleClick}>
+                                                    <CustomToggle eventKey="3">
+                                                        <Row>
+                                                            <Col sm={11} xs={11}>
+                                                                Berapa Harga untuk berlangganan?
+                                                            </Col>
+                                                            <Col sm={1} xs={1}>
+                                                                <FontAwesomeIcon icon={faPlus} className={this.state.statusFaq === "faq4" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} />
+                                                            </Col>
+                                                        </Row>
+                                                    </CustomToggle>
+                                                </div>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="3">
+                                                <Card.Body>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>Untuk Harga bisa menghubungi Customer Service kami atau datang ke Kantor kami di “Contact Us”</p>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    </div>
+
+                                    <div data-aos="fade-left" data-aos-delay="400">
+                                        <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
+                                            <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
+                                                <div onClick={this.handleClick}>
+                                                    <CustomToggle eventKey="4">
+                                                        <Row>
+                                                            <Col sm={11} xs={11}>
+                                                                Apa Kelebihan dari produk dan solusi dari BigSight?
+                                                            </Col>
+                                                            <Col sm={1} xs={1}>
+                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq6" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                            </Col>
+                                                        </Row>
+                                                    </CustomToggle>
+                                                </div>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="4">
+                                                <Card.Body>
+                                                    <div className={styles["Faq-Section1-Accordian-Answer"]}>
+                                                        <ul>
+                                                            <li>Memberikan solusi untuk pengimplementasian sistem digitalisasi</li>
+                                                            <li>Menciptakan data - data yang saling terintegrasi</li>
+                                                            <li>Mempersingkat waktu dan biaya operasional</li>
+                                                            <li>Mudah untuk digunakan</li>
+                                                        </ul>
+                                                    </div>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    </div>
+                                    <div data-aos="fade-left" data-aos-delay="0">
+                                        <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
+                                            <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
+                                                <div onClick={this.handleClick}>
+                                                    <CustomToggle eventKey="5">
+                                                        <Row>
+                                                            <Col sm={11} xs={11}>
+                                                                Bagaimana jenis arsitektur dalam mengimplementasikan Produk dan Solusi dari BigSight?
+                                                            </Col>
+                                                            <Col sm={1} xs={1}>
+                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq7" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                            </Col>
+                                                        </Row>
+                                                    </CustomToggle>
+                                                </div>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="5">
+                                                <Card.Body>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight menyediakan arsitektur On Premise ataupun On Cloud, untuk informasi lebih lanjut bisa menghubungi di “Contact Us”</p>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    </div>
+
+                                    <div data-aos="fade-left" data-aos-delay="0">
+                                        <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
+                                            <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
+                                                <div onClick={this.handleClick}>
+                                                    <CustomToggle eventKey="6">
+                                                        <Row>
+                                                            <Col sm={11} xs={11}>
+                                                                Apakah user dapat mengajukan kustomisasi produk atau layanan?
+                                                            </Col>
+                                                            <Col sm={1} xs={1}>
+                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq8" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                            </Col>
+                                                        </Row>
+                                                    </CustomToggle>
+                                                </div>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="6">
+                                                <Card.Body>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>Ya</p>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    </div>
+                                    <div data-aos="fade-left" data-aos-delay="0">
+                                        <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
+                                            <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
+                                                <div onClick={this.handleClick}>
+                                                    <CustomToggle eventKey="7">
+                                                        <Row>
+                                                            <Col sm={11} xs={11}>
+                                                                Apakah user dapat mencoba Produk dan Layanan dari BigSight melalui Demo atau Free Trial?
+                                                            </Col>
+                                                            <Col sm={1} xs={1}>
+                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq9" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                            </Col>
+                                                        </Row>{" "}
+                                                    </CustomToggle>
+                                                </div>
+                                            </Card.Header>
+                                            <Accordion.Collapse eventKey="7">
+                                                <Card.Body>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>Ya, User dapat menghubungi Customer Service kami di “Contact Us” atau Customer Service Produk dan Layanan terkait.</p>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    </div>
                                 </Accordion>
                             </Col>
                         </Row>
