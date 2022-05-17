@@ -9,7 +9,7 @@
 }
 
 .Faq-Section1-Title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-size: 50px;
     line-height: 120%;
@@ -43,7 +43,7 @@
     border: 1px solid transparent;
     color: #d34a4a;
     font-size: 27px;
-    font-family: 'Nunitos', sans-serif;
+    font-family: "Nunitos", sans-serif;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-align: left;
@@ -52,7 +52,7 @@
 }
 
 .Faq-Section1-Accordian-Answer {
-    font-family: 'Nunitos', sans-serif;
+    font-family: "Nunitos", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
@@ -63,10 +63,13 @@
     color: #000000;
 }
 
-
-/* .Faq-Section1-Accordian-Indicator {
+.Faq-Section1-Accordian-Indicator {
     transform: rotate(45deg);
-} */
+}
+
+.Faq-Section1-Accordian-Indicator-Normal {
+    transform: rotate(0deg);
+}
 
 @media screen and (max-width: 992px) {
     .Faq-Section1-Content-Container {

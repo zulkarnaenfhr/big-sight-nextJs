@@ -5,6 +5,8 @@ import styles from "./AboutUs-Section3.module.css";
 export default function AboutUsSection3() {
     return (
         <div id={styles["AboutUs-Section3"]}>
+            <h1 className={styles["AboutUs-Section3-Title"]}>Our Milestone</h1>
+            <h1 className={styles["AboutUs-Section3-Desc"]}>We grow with the innovation in each year, to infinity and beyond</h1>
             <Container className={styles["AboutUs-Section3-Container"]}>
                 <Row>
                     <Col md={4} sm={6} className={styles["AboutUs-Section3-Column-Container"]}>
