@@ -22,7 +22,7 @@ export default function BigSightNavbar() {
                                 <div className={styles["dropdown-menu-width"]}>
                                     <Row className={`${styles.rowDropDown} container`}>
                                         <Col xs={7}>
-                                            <Link href={"/notset"}>
+                                            <Link href={"https://picaso.id/"} passHref>
                                                 <div className={styles["BigSightDropDown-Menu1"]}>
                                                     <p>Picaso</p>
                                                 </div>
@@ -38,14 +38,14 @@ export default function BigSightNavbar() {
                                     </Row>
                                     <Row className={`${styles.rowDropDown} container`}>
                                         <Col xs={7}>
-                                            <Link href={"/notset"}>
+                                            <Link href={"https://www.smarteye.id/"}>
                                                 <div className={styles["BigSightDropDown-Menu1"]}>
                                                     <p>Smarteye</p>
                                                 </div>
                                             </Link>
                                         </Col>
                                         <Col>
-                                            <Link href={"/notset"}>
+                                            <Link href={"https://bigbox.co.id/"}>
                                                 <div className={styles["BigSightDropDown-Menu1"]}>
                                                     <p>Big Box</p>
                                                 </div>
@@ -54,14 +54,14 @@ export default function BigSightNavbar() {
                                     </Row>
                                     <Row className={`${styles.rowDropDown} container`}>
                                         <Col xs={7}>
-                                            <Link href={"/notset"}>
+                                            <Link href={"https://legalanalytics.id/"}>
                                                 <div className={styles["BigSightDropDown-Menu1"]}>
                                                     <p>Legal Analytics</p>
                                                 </div>
                                             </Link>
                                         </Col>
                                         <Col>
-                                            <Link href={"/notset"}>
+                                            <Link href={"http://bigscore.id/"}>
                                                 <div className={styles["BigSightDropDown-Menu1"]}>
                                                     <p>Big Score</p>
                                                 </div>
@@ -87,16 +87,10 @@ export default function BigSightNavbar() {
                                         <p className={styles["BigSightDropDown-Menu1"]}>About Us</p>{" "}
                                     </NavDropdown.Item>
                                 </Link>
-                                <Link href="/blog" passHref>
+                                <Link href="/update" passHref>
                                     <NavDropdown.Item className={styles["dropdown-item"]}>
                                         {" "}
-                                        <p className={styles["BigSightDropDown-Menu1"]}>Blog</p>{" "}
-                                    </NavDropdown.Item>
-                                </Link>{" "}
-                                <Link href="/press" passHref>
-                                    <NavDropdown.Item className={styles["dropdown-item"]}>
-                                        {" "}
-                                        <p className={styles["BigSightDropDown-Menu1"]}>Press</p>{" "}
+                                        <p className={styles["BigSightDropDown-Menu1"]}>Update</p>{" "}
                                     </NavDropdown.Item>
                                 </Link>{" "}
                             </NavDropdown>

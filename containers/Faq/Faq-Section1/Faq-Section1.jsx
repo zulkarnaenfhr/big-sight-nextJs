@@ -3,6 +3,7 @@ import styles from "./Faq-Section1.module.css";
 import React, { Component } from "react";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 function CustomToggle({ children, eventKey }) {
     const decoratedOnClick = useAccordionButton(eventKey);
@@ -27,58 +28,46 @@ class FaqSection1 extends Component {
             faq6: false,
             faq7: false,
             faq8: false,
-            statusFaq: "",
+            faq9: false,
         };
         this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick = (e) => {
-        if (e.target.innerHTML === "Apa itu Big Sight?") {
+        if (e.target.innerHTML === "1. Apa itu Big Sight?") {
             this.setState({
-                statusFaq: "faq1",
+                faq1: !this.state.faq1,
             });
             console.log(this.state.statusFaq);
-        } else if (e.target.innerHTML === "Apa saja Produk dan Solusi dari BigSight?") {
+        } else if (e.target.innerHTML === "2. Apa saja Produk dan Solusi dari BigSight?") {
             this.setState({
-                statusFaq: "faq2",
+                faq2: !this.state.faq2,
             });
-            //  className={this.state.faq2 === false ? "" : styles["Faq-Section1-Accordian-Indicator"]}
             console.log(this.state.statusFaq);
-        } else if (e.target.innerHTML === "Bagaimana cara berlangganan atau bekerjasama dengan BigSight?") {
+        } else if (e.target.innerHTML === "3. Bagaimana cara berlangganan atau bekerjasama dengan BigSight?") {
             this.setState({
-                // faq3: !this.state.faq3,
-                statusFaq: "faq3",
+                faq3: !this.state.faq3,
             });
-        } else if (e.target.innerHTML === "Berapa Harga untuk berlangganan?") {
+        } else if (e.target.innerHTML === "4. Berapa Harga untuk berlangganan?") {
             this.setState({
-                statusFaq: "faq4",
-                // faq4: !this.state.faq4,
+                faq4: !this.state.faq4,
             });
-        } else if (e.target.innerHTML === "Apa saja Produk dan Solusi dari BigSight?") {
+        } else if (e.target.innerHTML === "5. Apa Kelebihan dari produk dan solusi dari BigSight?") {
             this.setState({
-                statusFaq: "faq5",
+                faq5: !this.state.faq5,
             });
-            //  className={this.state.faq2 === false ? "" : styles["Faq-Section1-Accordian-Indicator"]}
             console.log(this.state.statusFaq);
-        } else if (e.target.innerHTML === "Apa Kelebihan dari produk dan solusi dari BigSight?") {
+        } else if (e.target.innerHTML === "6. Bagaimana jenis arsitektur dalam mengimplementasikan Produk dan Solusi dari BigSight?") {
             this.setState({
-                // faq3: !this.state.faq3,
-                statusFaq: "faq6",
+                faq6: !this.state.faq6,
             });
-        } else if (e.target.innerHTML === "Bagaimana jenis arsitektur dalam mengimplementasikan Produk dan Solusi dari BigSight?") {
+        } else if (e.target.innerHTML === "7. Apakah user dapat mengajukan kustomisasi produk atau layanan?") {
             this.setState({
-                statusFaq: "faq7",
-                // faq4: !this.state.faq4,
+                faq7: !this.state.faq7,
             });
-        } else if (e.target.innerHTML === "Apakah user dapat mengajukan kustomisasi produk atau layanan?") {
+        } else if (e.target.innerHTML === "8. Apakah user dapat mencoba Produk dan Layanan dari BigSight melalui Demo atau Free Trial?") {
             this.setState({
-                // faq3: !this.state.faq3,
-                statusFaq: "faq8",
-            });
-        } else if (e.target.innerHTML === "Apakah user dapat mencoba Produk dan Layanan dari BigSight melalui Demo atau Free Trial?") {
-            this.setState({
-                statusFaq: "faq9",
-                // faq4: !this.state.faq4,
+                faq8: !this.state.faq8,
             });
         }
     };
@@ -93,7 +82,7 @@ class FaqSection1 extends Component {
                                 <h1 className={styles["Faq-Section1-Title"]}>FAQ</h1>
                             </Col>
                             <Col className={styles["Faq-Section1-Right-Column"]} lg={9}>
-                                <Accordion defaultActiveKey="11">
+                                <Accordion defaultActiveKey="11" alwaysOpen>
                                     <div data-aos="fade-left">
                                         <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
                                             <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
@@ -101,10 +90,10 @@ class FaqSection1 extends Component {
                                                     <CustomToggle eventKey="0">
                                                         <Row>
                                                             <Col sm={11} xs={11}>
-                                                                Apa itu Big Sight?
+                                                                1. Apa itu Big Sight?
                                                             </Col>
                                                             <Col sm={1} xs={1}>
-                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq1" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                                <FontAwesomeIcon className={this.state.faq1 ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
                                                             </Col>
                                                         </Row>
                                                     </CustomToggle>
@@ -125,10 +114,10 @@ class FaqSection1 extends Component {
                                                     <CustomToggle eventKey="1">
                                                         <Row>
                                                             <Col sm={11} xs={11}>
-                                                                Apa saja Produk dan Solusi dari BigSight?
+                                                                2. Apa saja Produk dan Solusi dari BigSight?
                                                             </Col>
                                                             <Col sm={1} xs={1}>
-                                                                <FontAwesomeIcon icon={faPlus} className={this.state.statusFaq === "faq2" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} />
+                                                                <FontAwesomeIcon icon={faPlus} className={this.state.faq2 ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} />
                                                             </Col>
                                                         </Row>
                                                     </CustomToggle>
@@ -136,7 +125,7 @@ class FaqSection1 extends Component {
                                             </Card.Header>
                                             <Accordion.Collapse eventKey="1">
                                                 <Card.Body>
-                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight terdiri dari 6 Produk, untuk lebih lengkapnya bisa mengakses menu “Product”</p>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight terdiri dari 6 Produk, untuk lebih lengkapnya bisa mengakses Navbar “Product”</p>
                                                 </Card.Body>
                                             </Accordion.Collapse>
                                         </Card>
@@ -149,10 +138,10 @@ class FaqSection1 extends Component {
                                                     <CustomToggle eventKey="2">
                                                         <Row>
                                                             <Col sm={11} xs={11}>
-                                                                Bagaimana cara berlangganan atau bekerjasama dengan BigSight?
+                                                                3. Bagaimana cara berlangganan atau bekerjasama dengan BigSight?
                                                             </Col>
                                                             <Col sm={1} xs={1}>
-                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq3" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                                <FontAwesomeIcon className={this.state.faq3 ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
                                                             </Col>
                                                         </Row>
                                                     </CustomToggle>
@@ -160,7 +149,12 @@ class FaqSection1 extends Component {
                                             </Card.Header>
                                             <Accordion.Collapse eventKey="2">
                                                 <Card.Body>
-                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>Anda dapat menghubungi Customer Service kami di “Contact Us”</p>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>
+                                                        Anda dapat menghubungi Customer Service kami di{" "}
+                                                        <Link href="/contact-us" passhref>
+                                                            <a className={styles["Faq-Section1-Accordian-Link"]}>“Contact Us”</a>
+                                                        </Link>{" "}
+                                                    </p>
                                                 </Card.Body>
                                             </Accordion.Collapse>
                                         </Card>
@@ -173,10 +167,10 @@ class FaqSection1 extends Component {
                                                     <CustomToggle eventKey="3">
                                                         <Row>
                                                             <Col sm={11} xs={11}>
-                                                                Berapa Harga untuk berlangganan?
+                                                                4. Berapa Harga untuk berlangganan?
                                                             </Col>
                                                             <Col sm={1} xs={1}>
-                                                                <FontAwesomeIcon icon={faPlus} className={this.state.statusFaq === "faq4" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} />
+                                                                <FontAwesomeIcon icon={faPlus} className={this.state.faq4 ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} />
                                                             </Col>
                                                         </Row>
                                                     </CustomToggle>
@@ -184,7 +178,12 @@ class FaqSection1 extends Component {
                                             </Card.Header>
                                             <Accordion.Collapse eventKey="3">
                                                 <Card.Body>
-                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>Untuk Harga bisa menghubungi Customer Service kami atau datang ke Kantor kami di “Contact Us”</p>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>
+                                                        Untuk Harga bisa menghubungi Customer Service kami atau datang ke Kantor kami di{" "}
+                                                        <Link href="/contact-us" passhref>
+                                                            <a className={styles["Faq-Section1-Accordian-Link"]}>“Contact Us”</a>
+                                                        </Link>{" "}
+                                                    </p>
                                                 </Card.Body>
                                             </Accordion.Collapse>
                                         </Card>
@@ -197,10 +196,10 @@ class FaqSection1 extends Component {
                                                     <CustomToggle eventKey="4">
                                                         <Row>
                                                             <Col sm={11} xs={11}>
-                                                                Apa Kelebihan dari produk dan solusi dari BigSight?
+                                                                5. Apa Kelebihan dari produk dan solusi dari BigSight?
                                                             </Col>
                                                             <Col sm={1} xs={1}>
-                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq6" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                                <FontAwesomeIcon className={this.state.faq5 ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
                                                             </Col>
                                                         </Row>
                                                     </CustomToggle>
@@ -220,6 +219,7 @@ class FaqSection1 extends Component {
                                             </Accordion.Collapse>
                                         </Card>
                                     </div>
+
                                     <div data-aos="fade-left" data-aos-delay="0">
                                         <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
                                             <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
@@ -227,10 +227,10 @@ class FaqSection1 extends Component {
                                                     <CustomToggle eventKey="5">
                                                         <Row>
                                                             <Col sm={11} xs={11}>
-                                                                Bagaimana jenis arsitektur dalam mengimplementasikan Produk dan Solusi dari BigSight?
+                                                                6. Bagaimana jenis arsitektur dalam mengimplementasikan Produk dan Solusi dari BigSight?
                                                             </Col>
                                                             <Col sm={1} xs={1}>
-                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq7" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                                <FontAwesomeIcon className={this.state.faq6 ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
                                                             </Col>
                                                         </Row>
                                                     </CustomToggle>
@@ -238,7 +238,12 @@ class FaqSection1 extends Component {
                                             </Card.Header>
                                             <Accordion.Collapse eventKey="5">
                                                 <Card.Body>
-                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>BigSight menyediakan arsitektur On Premise ataupun On Cloud, untuk informasi lebih lanjut bisa menghubungi di “Contact Us”</p>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>
+                                                        BigSight menyediakan arsitektur On Premise ataupun On Cloud, untuk informasi lebih lanjut bisa menghubungi di{" "}
+                                                        <Link href="/contact-us" passhref>
+                                                            <a className={styles["Faq-Section1-Accordian-Link"]}>“Contact Us”</a>
+                                                        </Link>{" "}
+                                                    </p>
                                                 </Card.Body>
                                             </Accordion.Collapse>
                                         </Card>
@@ -251,10 +256,10 @@ class FaqSection1 extends Component {
                                                     <CustomToggle eventKey="6">
                                                         <Row>
                                                             <Col sm={11} xs={11}>
-                                                                Apakah user dapat mengajukan kustomisasi produk atau layanan?
+                                                                7. Apakah user dapat mengajukan kustomisasi produk atau layanan?
                                                             </Col>
                                                             <Col sm={1} xs={1}>
-                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq8" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                                <FontAwesomeIcon className={this.state.faq7 ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
                                                             </Col>
                                                         </Row>
                                                     </CustomToggle>
@@ -267,6 +272,7 @@ class FaqSection1 extends Component {
                                             </Accordion.Collapse>
                                         </Card>
                                     </div>
+
                                     <div data-aos="fade-left" data-aos-delay="0">
                                         <Card className={styles["Faq-Section1-Accordian-Row-Container"]}>
                                             <Card.Header className={styles["Faq-Section1-Accordian-Question-Container"]}>
@@ -274,10 +280,10 @@ class FaqSection1 extends Component {
                                                     <CustomToggle eventKey="7">
                                                         <Row>
                                                             <Col sm={11} xs={11}>
-                                                                Apakah user dapat mencoba Produk dan Layanan dari BigSight melalui Demo atau Free Trial?
+                                                                8. Apakah user dapat mencoba Produk dan Layanan dari BigSight melalui Demo atau Free Trial?
                                                             </Col>
                                                             <Col sm={1} xs={1}>
-                                                                <FontAwesomeIcon className={this.state.statusFaq === "faq9" ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
+                                                                <FontAwesomeIcon className={this.state.faq8 ? styles["Faq-Section1-Accordian-Indicator"] : styles["Faq-Section1-Accordian-Indicator-Normal"]} icon={faPlus} />
                                                             </Col>
                                                         </Row>{" "}
                                                     </CustomToggle>
@@ -285,7 +291,13 @@ class FaqSection1 extends Component {
                                             </Card.Header>
                                             <Accordion.Collapse eventKey="7">
                                                 <Card.Body>
-                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>Ya, User dapat menghubungi Customer Service kami di “Contact Us” atau Customer Service Produk dan Layanan terkait.</p>
+                                                    <p className={styles["Faq-Section1-Accordian-Answer"]}>
+                                                        Ya, User dapat menghubungi Customer Service kami di{" "}
+                                                        <Link href="/contact-us" passhref>
+                                                            <a className={styles["Faq-Section1-Accordian-Link"]}>“Contact Us”</a>
+                                                        </Link>{" "}
+                                                    q    atau Customer Service Produk dan Layanan terkait.
+                                                    </p>
                                                 </Card.Body>
                                             </Accordion.Collapse>
                                         </Card>
