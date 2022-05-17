@@ -113,7 +113,7 @@ class LandingPageSection5 extends Component {
                             <div className={styles["LandingPage-Section5-ColumnContainer"]}>
                                 <div data-aos={this.state.width > 992 ? "fade-left" : this.state.width > 576 ? "fade-left" : "fade-up"} data-aos-offset="100">
                                     <CardBigSightLandingPage
-                                        logoImg={require("../../../src/Big-Sight/LandingPage/Section5-Smarteye.png")}
+                                        logoImg={require("../../../src/Big-Sight/LandingPage/Section5-SmartEye.png")}
                                         marginTopDesc={"29px"}
                                         marginTop={"43px"}
                                         marginLeft={"31px"}
