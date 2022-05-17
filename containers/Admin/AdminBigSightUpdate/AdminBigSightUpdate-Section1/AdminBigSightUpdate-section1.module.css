@@ -1,0 +1,55 @@
+#AdminBigSightUpdate-Section1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 100px;
+    align-items: center;
+}
+
+.AdminBigSightUpdate-Section1-Content-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.AdminBigSightUpdate-Section1-Right-button-add {
+    font-size: 48px;
+    color: #EE2E24;
+}
+
+.AdminBigSightUpdate-Section2-content-button {
+    margin-right: 20px
+}
+
+@media (max-width: 920px) {
+    .AdminBigSightUpdate-Section1-Content-title {
+        /* font-size: 32px; */
+    }
+    .AdminBigSightUpdate-Section1-Right-button-add {
+        /* font-size: 38px; */
+        color: #EE2E24;
+    }
+    #AdminBigSightUpdate-Section1 {
+        /* display: flex; */
+        /* width: 100%; */
+        /* justify-content: space-between; */
+        padding: 40px 60px;
+    }
+}
+
+@media (max-width: 540px) {
+    .AdminBigSightUpdate-Section1-Content-title {
+        font-size: 24px;
+    }
+    .AdminBigSightUpdate-Section1-Right-button-add {
+        font-size: 34px;
+        color: #EE2E24;
+    }
+    #AdminBigSightUpdate-Section1 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 40px 30px;
+    }
+}
