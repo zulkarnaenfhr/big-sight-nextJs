@@ -30,7 +30,7 @@ class ContactUsSection1 extends Component {
                                     </div>
                                 </div>
                             </Col>
-                            <Col className={styles["ContactUs-Section1-Form-Content-Right-Container"]} lg={7}>
+                            <Col lg={7} className={styles["ContactUs-Section1-Form-Content-Right-Container"]}>
                                 <div className={styles["ContactUs-Section1-Right-Parent-Content-Container"]}>
                                     <form className={styles["ContactUs-Section1-Right-Form-Container"]} action="mailto:someone@example.com" method="post" encType="text/plain">
                                         <div data-aos="fade-left" data-aos-delay="100">
@@ -100,29 +100,38 @@ class ContactUsSection1 extends Component {
                                                             </span>
                                                         </label>
                                                     </Col>
-                                                </Row>
-                                                <Row>
                                                     <Col>
                                                         <label className={styles["ContactUs-Section1-RadioButton-Container"]}>
-                                                            <span className={styles["ContactUs-Section1-RadioButton-Container-ProductName"]}>Smarteye.id</span>
+                                                            <span className={styles["ContactUs-Section1-RadioButton-Container-ProductName"]}>SmartEye.id</span>
+                                                            <input type="radio" name="Product" value="Picaso" />
+                                                            <span className={styles["checkmark"]}>
+                                                                <FontAwesomeIcon icon={faCheck} />
+                                                            </span>
+                                                        </label>
+                                                    </Col>
+                                                </Row>
+                                                <Row>
+                                                    <Col md={3}>
+                                                        <label className={styles["ContactUs-Section1-RadioButton-Container"]}>
+                                                            <span className={styles["ContactUs-Section1-RadioButton-Container-ProductName"]}>Big Score</span>
                                                             <input type="radio" name="Product" value="Smarteye.id" />
                                                             <span className={styles["checkmark"]}>
                                                                 <FontAwesomeIcon icon={faCheck} />
                                                             </span>
                                                         </label>
                                                     </Col>
-                                                    <Col>
+                                                    <Col md={3}>
                                                         <label className={styles["ContactUs-Section1-RadioButton-Container"]}>
-                                                            <span className={styles["ContactUs-Section1-RadioButton-Container-ProductName"]}>Big Score</span>
+                                                            <span className={styles["ContactUs-Section1-RadioButton-Container-ProductName"]}>Big Box</span>
                                                             <input type="radio" name="Product" value="Big Score" />
                                                             <span className={styles["checkmark"]}>
                                                                 <FontAwesomeIcon icon={faCheck} />
                                                             </span>
                                                         </label>
                                                     </Col>
-                                                    <Col>
+                                                    <Col md={3}>
                                                         <label className={styles["ContactUs-Section1-RadioButton-Container"]}>
-                                                            <span className={styles["ContactUs-Section1-RadioButton-Container-ProductName"]}>Big Box</span>
+                                                            <span className={styles["ContactUs-Section1-RadioButton-Container-ProductName"]}>Other Product</span>
                                                             <input type="radio" name="Product" value="Big Box" />
                                                             <span className={styles["checkmark"]}>
                                                                 <FontAwesomeIcon icon={faCheck} />
